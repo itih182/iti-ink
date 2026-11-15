@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SEU-USUARIO.github.io/iti-ink/sitemap.xml
+Sitemap: https://itih182.github.io/iti-ink/sitemap.xml
