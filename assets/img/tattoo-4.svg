@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Espaço reservado para foto: DOTWORK">
+  <rect width="600" height="600" fill="#141414"/>
+  <g opacity="0.55"><g fill="none" stroke="#40e0d0" stroke-width="1.6">
+     <circle cx="300" cy="300" r="60"/>
+     <circle cx="300" cy="300" r="95"/>
+     <circle cx="300" cy="300" r="130"/>
+     <circle cx="300" cy="300" r="165" stroke-dasharray="2 10"/>
+     <path d="M300 135 L300 465M135 300 L465 300M183 183 L417 417M417 183 L183 417" stroke-width="1"/>
+   </g>
+   <g fill="#40e0d0">
+     <circle cx="300" cy="240" r="5"/><circle cx="300" cy="360" r="5"/>
+     <circle cx="240" cy="300" r="5"/><circle cx="360" cy="300" r="5"/>
+     <circle cx="252.5" cy="252.5" r="4"/><circle cx="347.5" cy="347.5" r="4"/>
+     <circle cx="347.5" cy="252.5" r="4"/><circle cx="252.5" cy="347.5" r="4"/>
+     <circle cx="300" cy="300" r="9"/>
+   </g></g>
+  <rect x="1" y="1" width="598" height="598" fill="none" stroke="#2a2a2a"/>
+  <g transform="translate(0 504)">
+    <text x="40" y="0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">DOTWORK</text>
+    <text x="40" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
+  </g>
+</svg>

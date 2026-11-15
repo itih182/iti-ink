@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750" role="img" aria-label="Espaço reservado para foto: FLORAL">
+  <rect width="600" height="750" fill="#141414"/>
+  <g opacity="0.55"><g fill="none" stroke="#40e0d0" stroke-width="1.8" stroke-linecap="round">
+     <path d="M300 640 C310 520 292 430 300 350"/>
+     <g transform="translate(300 340)">
+       <path d="M0 0 C-70 -40 -110 -110 -95 -170 C-45 -150 -8 -95 0 0Z"/>
+       <path d="M0 0 C70 -40 110 -110 95 -170 C45 -150 8 -95 0 0Z"/>
+       <path d="M0 0 C-40 -75 -40 -160 0 -205 C40 -160 40 -75 0 0Z"/>
+       <path d="M0 0 C-95 -20 -160 -70 -175 -130 C-105 -130 -45 -85 0 0Z"/>
+       <path d="M0 0 C95 -20 160 -70 175 -130 C105 -130 45 -85 0 0Z"/>
+       <circle cx="0" cy="-12" r="16" fill="#40e0d0" stroke="none" opacity="0.85"/>
+     </g>
+   </g></g>
+  <rect x="1" y="1" width="598" height="748" fill="none" stroke="#2a2a2a"/>
+  <g transform="translate(0 654)">
+    <text x="40" y="0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">FLORAL</text>
+    <text x="40" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
+  </g>
+</svg>
