@@ -170,6 +170,7 @@ p { margin: 0 0 1.1em; }
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  min-height: 44px;
 }
 .brand img {
   width: 46px;
@@ -624,6 +625,12 @@ p { margin: 0 0 1.1em; }
   .wa-float { width: 52px; height: 52px; right: 1rem; bottom: 1rem; }
   .local-card .btn { min-height: 48px; }
   .cta-band .btn-lg { min-height: 52px; }
+}
+
+@media (max-width: 360px) {
+  .nav { gap: 0.7rem; font-size: 0.64rem; letter-spacing: 0.005em; }
+  .site-header .btn-sm { padding: 0.5rem 0.75rem; font-size: 0.74rem; }
+  .brand img { width: 36px; height: 36px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
