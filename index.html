@@ -118,7 +118,7 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#topo" aria-label="iti.ink tattoo estúdio, página inicial">
+      <a class="brand" href="#topo">
         <img src="assets/logo-128.png" alt="iti.ink tattoo estúdio — desde 2017" width="46" height="46" fetchpriority="high">
         <span class="brand-tag">Tatuador em Criciúma &middot; 8 anos</span>
       </a>
@@ -134,16 +134,18 @@
 
   <main id="conteudo">
     <section class="hero" id="topo">
-      <div class="wrap hero-inner">
-        <h1>Tatuador em Criciúma</h1>
-        <p class="hero-tag">
-          <span class="accent">8 anos</span> de experiência &middot; traço fino, blackwork e projetos autorais
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/5548988595450?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener">
-            Agendar pelo WhatsApp
-          </a>
-          <a class="btn btn-ghost" href="#portfolio">Ver portfólio</a>
+      <div class="wrap">
+        <div class="hero-inner">
+          <h1>Tatuador em Criciúma</h1>
+          <p class="hero-tag">
+            <span class="accent">8 anos</span> de experiência &middot; traço fino, blackwork e projetos autorais
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5548988595450?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener">
+              Agendar pelo WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#portfolio">Ver portfólio</a>
+          </div>
         </div>
       </div>
     </section>
@@ -152,7 +154,7 @@
       <div class="wrap">
         <h2>Trabalhos do estúdio</h2>
         <p class="gallery-hint" aria-hidden="true">Arraste para o lado para ver mais &#8594;</p>
-        <div class="gallery" role="list">
+        <div class="gallery" role="list" tabindex="0" aria-label="Trabalhos do estúdio">
           <figure class="shot" role="listitem">
             <img src="assets/img/tattoo-1.svg" alt="Tatuagem de traço fino no antebraço" width="600" height="750" loading="lazy" decoding="async">
           </figure>
