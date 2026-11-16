@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Espaço reservado para foto: ESTÚDIO">
-  <rect width="600" height="600" fill="#141414"/>
-  <g opacity="0.55"><g fill="none" stroke="#40e0d0" stroke-width="2.2" stroke-linecap="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750" role="img" aria-label="Espaço reservado para foto: ESTÚDIO">
+  <rect width="600" height="750" fill="#141414"/>
+  <g opacity="0.55" transform="translate(0 75)"><g fill="none" stroke="#40e0d0" stroke-width="2.2" stroke-linecap="round">
      <rect x="235" y="120" width="130" height="150" rx="16"/>
      <path d="M300 270 L300 400"/>
      <path d="M300 400 L300 500" stroke-width="4"/>
@@ -9,9 +9,9 @@
      <path d="M170 520 C240 480 360 480 430 520" stroke-width="1.2" opacity="0.6"/>
    </g>
    <rect x="262" y="160" width="76" height="8" rx="4" fill="#40e0d0" opacity="0.8"/></g>
-  <rect x="1" y="1" width="598" height="598" fill="none" stroke="#2a2a2a"/>
-  <g transform="translate(0 504)">
-    <text x="40" y="0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">ESTÚDIO</text>
-    <text x="40" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
+  <rect x="1" y="1" width="598" height="748" fill="none" stroke="#2a2a2a"/>
+  <g transform="translate(0 654)">
+    <text x="40" y="0" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">ESTÚDIO</text>
+    <text x="40" y="34" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
   </g>
 </svg>

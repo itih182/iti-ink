@@ -32,11 +32,11 @@
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/logo-512.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://wa.me" crossorigin>
   <link rel="dns-prefetch" href="https://www.google.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/syne-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/space-grotesk-latin.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/logo-128.png" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
@@ -116,11 +116,18 @@
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="topbar-local" href="#local"><span class="topbar-dot" aria-hidden="true"></span><span class="topbar-full">Rua Campos Novos, 235 &middot; São Luís, </span>Criciúma-SC</a>
+      <a class="topbar-tel" href="tel:+5548988595450">(48) 98859-5450</a>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#topo">
         <img src="assets/logo-128.png" alt="iti.ink tattoo estúdio — desde 2017" width="46" height="46" fetchpriority="high">
-        <span class="brand-tag">Tatuador em Criciúma &middot; 8 anos</span>
+        <span class="brand-tag"><span class="ts-line">Tatuador em</span> <span class="ts-line">Criciúma &middot; 8 anos</span></span>
       </a>
       <nav class="nav" aria-label="Navegação principal">
         <a href="#portfolio">Portfólio</a>
@@ -136,7 +143,7 @@
     <section class="hero" id="topo">
       <div class="wrap">
         <div class="hero-inner">
-          <h1>Tatuador em Criciúma</h1>
+          <h1><span class="ln">Tatuador</span> <span class="ln">em Criciúma</span></h1>
           <p class="hero-tag">
             <span class="accent">8 anos</span> de experiência &middot; traço fino, blackwork e projetos autorais
           </p>
@@ -159,16 +166,16 @@
             <img src="assets/img/tattoo-1.svg" alt="Tatuagem de traço fino no antebraço" width="600" height="750" loading="lazy" decoding="async">
           </figure>
           <figure class="shot" role="listitem">
-            <img src="assets/img/tattoo-2.svg" alt="Tatuagem blackwork geométrica no braço" width="600" height="600" loading="lazy" decoding="async">
+            <img src="assets/img/tattoo-2.svg" alt="Tatuagem blackwork geométrica no braço" width="600" height="750" loading="lazy" decoding="async">
           </figure>
           <figure class="shot" role="listitem">
             <img src="assets/img/tattoo-3.svg" alt="Tatuagem floral em preto e cinza na escápula" width="600" height="750" loading="lazy" decoding="async">
           </figure>
           <figure class="shot" role="listitem">
-            <img src="assets/img/tattoo-4.svg" alt="Tatuagem mandala em dotwork na mão" width="600" height="600" loading="lazy" decoding="async">
+            <img src="assets/img/tattoo-4.svg" alt="Tatuagem mandala em dotwork na mão" width="600" height="750" loading="lazy" decoding="async">
           </figure>
           <figure class="shot" role="listitem">
-            <img src="assets/img/tattoo-5.svg" alt="Tatuador trabalhando no estúdio" width="600" height="600" loading="lazy" decoding="async">
+            <img src="assets/img/tattoo-5.svg" alt="Tatuador trabalhando no estúdio" width="600" height="750" loading="lazy" decoding="async">
           </figure>
           <figure class="shot" role="listitem">
             <img src="assets/img/tattoo-6.svg" alt="Tatuagem de lettering minimalista na clavícula" width="600" height="750" loading="lazy" decoding="async">

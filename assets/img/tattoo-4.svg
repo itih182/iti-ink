@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Espaço reservado para foto: DOTWORK">
-  <rect width="600" height="600" fill="#141414"/>
-  <g opacity="0.55"><g fill="none" stroke="#40e0d0" stroke-width="1.6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750" role="img" aria-label="Espaço reservado para foto: DOTWORK">
+  <rect width="600" height="750" fill="#141414"/>
+  <g opacity="0.55" transform="translate(0 75)"><g fill="none" stroke="#40e0d0" stroke-width="1.6">
      <circle cx="300" cy="300" r="60"/>
      <circle cx="300" cy="300" r="95"/>
      <circle cx="300" cy="300" r="130"/>
@@ -14,9 +14,9 @@
      <circle cx="347.5" cy="252.5" r="4"/><circle cx="252.5" cy="347.5" r="4"/>
      <circle cx="300" cy="300" r="9"/>
    </g></g>
-  <rect x="1" y="1" width="598" height="598" fill="none" stroke="#2a2a2a"/>
-  <g transform="translate(0 504)">
-    <text x="40" y="0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">DOTWORK</text>
-    <text x="40" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
+  <rect x="1" y="1" width="598" height="748" fill="none" stroke="#2a2a2a"/>
+  <g transform="translate(0 654)">
+    <text x="40" y="0" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">DOTWORK</text>
+    <text x="40" y="34" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
   </g>
 </svg>

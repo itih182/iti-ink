@@ -130,17 +130,16 @@ const labels = [
 ];
 
 arts.forEach((art, i) => {
-  const tall = i === 0 || i === 2 || i === 5;
   const w = 600;
-  const h = tall ? 750 : 600;
-  const cy = tall ? 375 : 300;
+  const h = 750;
+  const dy = (h - 600) / 2;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 ${h}" width="${w}" height="${h}" role="img" aria-label="Espaço reservado para foto: ${labels[i]}">
   <rect width="600" height="${h}" fill="${CARD}"/>
-  <g opacity="0.55">${art.replaceAll('cy="370"', `cy="${cy}"`).replaceAll('cy="300"', `cy="${cy}"`)}</g>
+  <g opacity="0.55" transform="translate(0 ${dy})">${art.replaceAll('cy="370"', 'cy="300"')}</g>
   <rect x="1" y="1" width="598" height="${h - 2}" fill="none" stroke="${LINE}"/>
   <g transform="translate(0 ${h - 96})">
-    <text x="40" y="0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">${labels[i]}</text>
-    <text x="40" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
+    <text x="40" y="0" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#7a7a7a">${labels[i]}</text>
+    <text x="40" y="34" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="1" fill="#3f3f3f">FOTO EM BREVE</text>
   </g>
 </svg>
 `;
