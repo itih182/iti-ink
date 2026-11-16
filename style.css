@@ -400,6 +400,10 @@ p { margin: 0 0 1.1em; }
   text-align: center;
   margin-top: 1.5rem;
 }
+.gallery-note a {
+  display: inline-block;
+  padding-block: 0.6rem;
+}
 
 .faq {
   margin-top: 1rem;
@@ -628,9 +632,17 @@ p { margin: 0 0 1.1em; }
 }
 
 @media (max-width: 360px) {
-  .nav { gap: 0.7rem; font-size: 0.64rem; letter-spacing: 0.005em; }
+  .nav { gap: 0.7rem; font-size: 0.7rem; letter-spacing: -0.01em; }
   .site-header .btn-sm { padding: 0.5rem 0.75rem; font-size: 0.74rem; }
   .brand img { width: 36px; height: 36px; }
+}
+
+/* Telas curtas: cabeçalho deixa de ser fixo e o hero encolhe */
+@media (max-height: 680px) {
+  .site-header { position: static; }
+  #topo, #sobre, #estilos, #portfolio, #local, #duvidas { scroll-margin-top: 0; }
+  .hero { padding-block: 1.25rem 1.5rem; }
+  .hero-tag { margin-bottom: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
