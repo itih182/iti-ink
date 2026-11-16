@@ -1,50 +1,50 @@
 # iti.ink tattoo estúdio — site
 
-Site estático do estúdio de tatuagem **iti.ink**, em Criciúma – SC.
+Site estático do estúdio de tatuagem **iti.ink**, em Criciúma — SC.
 Sem build, sem banco, sem custo: HTML + CSS puro, hospedado no GitHub Pages.
 
+**No ar:** <https://itih182.github.io/iti-ink/>
+
 ```
-index.html      página única (hero, sobre, estilos, portfólio, localização, CTA)
+index.html      página única (hero, portfólio, sobre, estilos, localização, FAQ, CTA)
 style.css       todo o estilo (paleta preto / branco / cinza / turquesa)
 assets/         logo, favicon, og-cover e placeholders do portfólio
+assets/generate-assets.mjs  regenera os placeholders SVG
 robots.txt      libera indexação e aponta o sitemap
 sitemap.xml     mapa do site para o Google
 .nojekyll       desliga o Jekyll do GitHub Pages
+deploy.ps1      troca a URL em todos os arquivos e publica
 ```
 
-## Antes de publicar: troque os dados provisórios
+## Estado atual
+
+- Lighthouse: **Acessibilidade 100 · Boas práticas 100 · SEO 100**
+- Zero JavaScript, zero dependências, zero requisições bloqueantes
+- 146 KB no primeiro carregamento, 12 requisições
+- Responsivo de 320 px a 1440 px, sem rolagem horizontal
+- Galeria arrastável no celular, alvos de toque ≥ 44 px
+
+## Trocar conteúdo provisório
 
 | O quê | Onde |
 |---|---|
-| Fotos reais das tattoos | `assets/img/tattoo-1..6` (exporte em `.jpg` ou `.webp`, até ~200 KB cada, e atualize o `src` no `index.html`) |
-| Logo definitiva | `assets/logo.svg` |
+| Fotos reais das tattoos | `assets/img/tattoo-1..6` (`.jpg` ou `.webp`, até ~200 KB cada, e atualize o `src` no `index.html`) |
+| Logo definitiva | `assets/logo-128.png` (header/footer) e `assets/logo-512.png` (schema) |
 | Endereço com CEP | `index.html` (bloco `address` e JSON-LD) |
 | Instagram / redes | adicione um link no `<footer>` e o campo `sameAs` no JSON-LD |
 | Horário de funcionamento | adicione `openingHoursSpecification` no JSON-LD |
-| `SEU-USUARIO` | `deploy.ps1 -User seu-usuario` troca em todos os arquivos |
 
-## Publicar no GitHub Pages (gratuito)
+## Publicar
 
-1. Crie a conta em <https://github.com/signup> (grátis).
-2. Crie um repositório **público** chamado `iti-ink`.
-3. No terminal, dentro desta pasta:
+O repositório já está conectado e publicado em `main`.
 
 ```powershell
-git remote add origin https://github.com/SEU-USUARIO/iti-ink.git
-git branch -M main
-git push -u origin main
+git add -A
+git commit -m "sua mensagem"
+git push
 ```
 
-4. No repositório: **Settings → Pages → Source: Deploy from a branch → Branch: `main` / root → Save**.
-5. Configure a URL final e publique:
-
-```powershell
-.\deploy.ps1 -User SEU-USUARIO
-```
-
-O script troca `SEU-USUARIO` em `index.html`, `robots.txt` e `sitemap.xml`,
-faz commit e envia. Depois de 1–2 minutos o site fica em
-`https://SEU-USUARIO.github.io/iti-ink/`.
+O GitHub Pages publica sozinho em 1 a 2 minutos.
 
 ### Domínio próprio (opcional)
 
