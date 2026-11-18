@@ -56,10 +56,18 @@
       gtag('js', new Date());
       gtag('config', window.GA4_MEASUREMENT_ID);
       (function () {
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_MEASUREMENT_ID;
-        document.head.appendChild(s);
+        function loadTag() {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_MEASUREMENT_ID;
+          document.head.appendChild(s);
+        }
+        // carrega depois do evento load: reduz JS que bloqueia a thread principal no LCP
+        if (document.readyState === 'complete') loadTag();
+        else window.addEventListener('load', function () {
+          if ('requestIdleCallback' in window) requestIdleCallback(loadTag, { timeout: 2000 });
+          else setTimeout(loadTag, 1);
+        }, { once: true });
       })();
     }
   </script>
