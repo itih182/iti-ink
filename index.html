@@ -56,18 +56,21 @@
       gtag('js', new Date());
       gtag('config', window.GA4_MEASUREMENT_ID);
       (function () {
+        var loaded = false;
         function loadTag() {
+          if (loaded) return;
+          loaded = true;
           var s = document.createElement('script');
           s.async = true;
           s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_MEASUREMENT_ID;
           document.head.appendChild(s);
         }
-        // carrega depois do evento load: reduz JS que bloqueia a thread principal no LCP
-        if (document.readyState === 'complete') loadTag();
-        else window.addEventListener('load', function () {
-          if ('requestIdleCallback' in window) requestIdleCallback(loadTag, { timeout: 2000 });
-          else setTimeout(loadTag, 1);
-        }, { once: true });
+        // carrega na primeira interação ou 3s após o load: mantém a thread livre no LCP/TBT
+        ['pointerdown', 'keydown', 'scroll'].forEach(function (ev) {
+          window.addEventListener(ev, loadTag, { once: true, passive: true });
+        });
+        if (document.readyState === 'complete') setTimeout(loadTag, 3000);
+        else window.addEventListener('load', function () { setTimeout(loadTag, 3000); }, { once: true });
       })();
     }
   </script>
@@ -2148,7 +2151,7 @@
 
         <div class="gallery-grid" id="gallery-grid">
           <!-- 01 -->
-          <article class="tattoo-card" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="Ampliar trabalho 01">
+          <div class="tattoo-card" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="Ampliar trabalho 01">
             <span class="tattoo-index num">01</span>
                         <picture>
               <source
@@ -2169,10 +2172,10 @@
               <code>20230311_192858.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 02 -->
-          <article class="tattoo-card" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="Ampliar trabalho 02">
+          <div class="tattoo-card" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="Ampliar trabalho 02">
             <span class="tattoo-index num">02</span>
                         <picture>
               <source
@@ -2193,10 +2196,10 @@
               <code>20230411_201256.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 03 -->
-          <article class="tattoo-card" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="Ampliar trabalho 03">
+          <div class="tattoo-card" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="Ampliar trabalho 03">
             <span class="tattoo-index num">03</span>
                         <picture>
               <source
@@ -2218,10 +2221,10 @@
               <code>20230425_154523.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 04 -->
-          <article class="tattoo-card" onclick="openLightbox(3)" role="button" tabindex="0" aria-label="Ampliar trabalho 04">
+          <div class="tattoo-card" onclick="openLightbox(3)" role="button" tabindex="0" aria-label="Ampliar trabalho 04">
             <span class="tattoo-index num">04</span>
                         <picture>
               <source
@@ -2243,10 +2246,10 @@
               <code>IMG_20260316_121742.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 05 -->
-          <article class="tattoo-card" onclick="openLightbox(4)" role="button" tabindex="0" aria-label="Ampliar trabalho 05">
+          <div class="tattoo-card" onclick="openLightbox(4)" role="button" tabindex="0" aria-label="Ampliar trabalho 05">
             <span class="tattoo-index num">05</span>
                         <picture>
               <source
@@ -2268,10 +2271,10 @@
               <code>IMG_20260414_205827662.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 06 -->
-          <article class="tattoo-card" onclick="openLightbox(5)" role="button" tabindex="0" aria-label="Ampliar trabalho 06">
+          <div class="tattoo-card" onclick="openLightbox(5)" role="button" tabindex="0" aria-label="Ampliar trabalho 06">
             <span class="tattoo-index num">06</span>
                         <picture>
               <source
@@ -2293,10 +2296,10 @@
               <code>IMG_20260508_180837116.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 07 -->
-          <article class="tattoo-card" onclick="openLightbox(6)" role="button" tabindex="0" aria-label="Ampliar trabalho 07">
+          <div class="tattoo-card" onclick="openLightbox(6)" role="button" tabindex="0" aria-label="Ampliar trabalho 07">
             <span class="tattoo-index num">07</span>
                         <picture>
               <source
@@ -2318,10 +2321,10 @@
               <code>IMG_20260605_234303379.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 08 -->
-          <article class="tattoo-card" onclick="openLightbox(7)" role="button" tabindex="0" aria-label="Ampliar trabalho 08">
+          <div class="tattoo-card" onclick="openLightbox(7)" role="button" tabindex="0" aria-label="Ampliar trabalho 08">
             <span class="tattoo-index num">08</span>
                         <picture>
               <source
@@ -2343,10 +2346,10 @@
               <code>IMG_20260704_223608363_HDR.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 09 -->
-          <article class="tattoo-card" onclick="openLightbox(8)" role="button" tabindex="0" aria-label="Ampliar trabalho 09">
+          <div class="tattoo-card" onclick="openLightbox(8)" role="button" tabindex="0" aria-label="Ampliar trabalho 09">
             <span class="tattoo-index num">09</span>
                         <picture>
               <source
@@ -2368,10 +2371,10 @@
               <code>IMG_20260904_170700334.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
 
           <!-- 10 -->
-          <article class="tattoo-card" onclick="openLightbox(9)" role="button" tabindex="0" aria-label="Ampliar trabalho 10">
+          <div class="tattoo-card" onclick="openLightbox(9)" role="button" tabindex="0" aria-label="Ampliar trabalho 10">
             <span class="tattoo-index num">10</span>
                         <picture>
               <source
@@ -2393,7 +2396,7 @@
               <code>IMG_20261016_210707414.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </article>
+          </div>
         </div>
 
         <div class="gallery-cta-wrap">
