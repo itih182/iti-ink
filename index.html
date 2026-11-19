@@ -3489,31 +3489,38 @@
         });
       }
 
-      function animate(now) {
+      function drawStars() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for (let i = stars.length - 1; i >= 0; i--) {
-          const s = stars[i];
-          s.life += 16;
+        for (const s of stars) {
           const progress = s.life / s.maxLife;
-          if (progress >= 1) {
-            stars.splice(i, 1);
-            continue;
-          }
+          if (progress >= 1) continue;
           const alpha = Math.sin(progress * Math.PI) * 0.85;
           ctx.beginPath();
           ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
           ctx.fillStyle = s.color;
           ctx.globalAlpha = alpha;
           ctx.fill();
-          ctx.globalAlpha = 1;
+        }
+        ctx.globalAlpha = 1;
+      }
+
+      function animate(now) {
+        for (let i = stars.length - 1; i >= 0; i--) {
+          const s = stars[i];
+          s.life += 16;
+          if (s.life >= s.maxLife) {
+            stars.splice(i, 1);
+          }
         }
         // Nova estrela a cada ~2s
         if (Math.random() < 0.008) spawnStar();
+        drawStars();
         requestAnimationFrame(animate);
       }
 
-      // Inicia com 1 estrela e depois spawna aleatoriamente
-      spawnStar();
+      // Desenha estrelas iniciais imediatamente (para screenshot/teste visual)
+      for (let i = 0; i < 2; i++) spawnStar();
+      drawStars();
       requestAnimationFrame(animate);
     }
 
