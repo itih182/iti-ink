@@ -267,20 +267,41 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      width: 260px;
-      max-width: 20vw;
-      opacity: 0.50;
+      width: 320px;
+      max-width: 24vw;
+      opacity: 0;
       pointer-events: none;
+      /* Mask para forma orgânica - fade nas pontas */
+      mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
     }
 
     .smoke-column-left {
-      left: 0;
+      left: -40px;
       transform-origin: left center;
+      animation: smoke-drift-left 25s ease-in-out infinite alternate;
     }
 
     .smoke-column-right {
-      right: 0;
+      right: -40px;
       transform-origin: right center;
+      animation: smoke-drift-right 28s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes smoke-drift-left {
+      0%   { transform: translateX(0) scaleY(1) skewX(0deg); opacity: 0.45; }
+      25%  { transform: translateX(30px) scaleY(1.05) skewX(-2deg); opacity: 0.55; }
+      50%  { transform: translateX(-20px) scaleY(0.98) skewX(1deg); opacity: 0.40; }
+      75%  { transform: translateX(15px) scaleY(1.02) skewX(-1deg); opacity: 0.50; }
+      100% { transform: translateX(0) scaleY(1) skewX(0deg); opacity: 0.45; }
+    }
+
+    @keyframes smoke-drift-right {
+      0%   { transform: translateX(0) scaleY(1) skewX(0deg); opacity: 0.45; }
+      25%  { transform: translateX(-30px) scaleY(1.05) skewX(2deg); opacity: 0.55; }
+      50%  { transform: translateX(20px) scaleY(0.98) skewX(-1deg); opacity: 0.40; }
+      75%  { transform: translateX(-15px) scaleY(1.02) skewX(1deg); opacity: 0.50; }
+      100% { transform: translateX(0) scaleY(1) skewX(0deg); opacity: 0.45; }
     }
 
     .smoke-column svg {
@@ -291,9 +312,8 @@
 
     @media (max-width: 767px) {
       .smoke-column {
-        width: 160px;
-        max-width: 28vw;
-        opacity: 0.35;
+        width: 180px;
+        max-width: 30vw;
       }
     }
 
@@ -303,7 +323,7 @@
       }
       .smoke-column {
         animation: none !important;
-        opacity: 0.25;
+        opacity: 0.20;
       }
     }
 
@@ -2106,34 +2126,81 @@
       <svg width="100%" height="100%" viewBox="0 0 400 1000" preserveAspectRatio="none">
         <defs>
           <filter id="smoke-turbulence-left">
-            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.004" numOctaves="4" result="noise" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G" />
-            <feGaussianBlur stdDeviation="1.5" />
+            <feTurbulence type="fractalNoise" baseFrequency="0.006 0.003" numOctaves="5" result="noise" seed="123" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="40" xChannelSelector="R" yChannelSelector="G" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.6 0" />
           </filter>
-          <linearGradient id="smoke-gradient-left" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#00F0D6" stop-opacity="0.50" />
-            <stop offset="50%" stop-color="#00D8C0" stop-opacity="0.35" />
-            <stop offset="100%" stop-color="#00A898" stop-opacity="0.15" />
+          <filter id="smoke-soft-glow">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+          <linearGradient id="smoke-gradient-left-1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00F0D6" stop-opacity="0.35" />
+            <stop offset="30%" stop-color="#00D8C0" stop-opacity="0.25" />
+            <stop offset="60%" stop-color="#00B8A0" stop-opacity="0.12" />
+            <stop offset="100%" stop-color="#008878" stop-opacity="0" />
           </linearGradient>
+          <linearGradient id="smoke-gradient-left-2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#00E8CE" stop-opacity="0.20" />
+            <stop offset="40%" stop-color="#00C8B0" stop-opacity="0.10" />
+            <stop offset="80%" stop-color="#009888" stop-opacity="0.02" />
+            <stop offset="100%" stop-color="#006858" stop-opacity="0" />
+          </linearGradient>
+          <radialGradient id="smoke-core-left" cx="15%" cy="50%" r="45%">
+            <stop offset="0%" stop-color="#00FFE0" stop-opacity="0.18" />
+            <stop offset="50%" stop-color="#00D8C0" stop-opacity="0.06" />
+            <stop offset="100%" stop-color="#00A898" stop-opacity="0" />
+          </radialGradient>
         </defs>
-        <rect width="400" height="1000" fill="url(#smoke-gradient-left)" filter="url(#smoke-turbulence-left)" />
+        <!-- Camada base suave -->
+        <rect width="400" height="1000" fill="url(#smoke-gradient-left-1)" filter="url(#smoke-turbulence-left)" />
+        <!-- Camada secundária invertida para profundidade -->
+        <rect width="400" height="1000" fill="url(#smoke-gradient-left-2)" filter="url(#smoke-turbulence-left)" opacity="0.6" />
+        <!-- Núcleo brilhante central -->
+        <ellipse cx="60" cy="500" rx="180" ry="400" fill="url(#smoke-core-left)" filter="url(#smoke-soft-glow)" />
       </svg>
     </div>
     <div class="smoke-column smoke-column-right" aria-hidden="true">
       <svg width="100%" height="100%" viewBox="0 0 400 1000" preserveAspectRatio="none">
         <defs>
           <filter id="smoke-turbulence-right">
-            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.004" numOctaves="4" result="noise" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G" />
-            <feGaussianBlur stdDeviation="1.5" />
+            <feTurbulence type="fractalNoise" baseFrequency="0.006 0.003" numOctaves="5" result="noise" seed="456" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="40" xChannelSelector="R" yChannelSelector="G" />
+            <feGaussianBlur stdDeviation="2" />
+            <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.6 0" />
           </filter>
-          <linearGradient id="smoke-gradient-right" x1="100%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#00F0D6" stop-opacity="0.50" />
-            <stop offset="50%" stop-color="#00D8C0" stop-opacity="0.35" />
-            <stop offset="100%" stop-color="#00A898" stop-opacity="0.15" />
+          <filter id="smoke-soft-glow">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+          <linearGradient id="smoke-gradient-right-1" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#00F0D6" stop-opacity="0.35" />
+            <stop offset="30%" stop-color="#00D8C0" stop-opacity="0.25" />
+            <stop offset="60%" stop-color="#00B8A0" stop-opacity="0.12" />
+            <stop offset="100%" stop-color="#008878" stop-opacity="0" />
           </linearGradient>
+          <linearGradient id="smoke-gradient-right-2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00E8CE" stop-opacity="0.20" />
+            <stop offset="40%" stop-color="#00C8B0" stop-opacity="0.10" />
+            <stop offset="80%" stop-color="#009888" stop-opacity="0.02" />
+            <stop offset="100%" stop-color="#006858" stop-opacity="0" />
+          </linearGradient>
+          <radialGradient id="smoke-core-right" cx="85%" cy="50%" r="45%">
+            <stop offset="0%" stop-color="#00FFE0" stop-opacity="0.18" />
+            <stop offset="50%" stop-color="#00D8C0" stop-opacity="0.06" />
+            <stop offset="100%" stop-color="#00A898" stop-opacity="0" />
+          </radialGradient>
         </defs>
-        <rect width="400" height="1000" fill="url(#smoke-gradient-right)" filter="url(#smoke-turbulence-right)" />
+        <rect width="400" height="1000" fill="url(#smoke-gradient-right-1)" filter="url(#smoke-turbulence-right)" />
+        <rect width="400" height="1000" fill="url(#smoke-gradient-right-2)" filter="url(#smoke-turbulence-right)" opacity="0.6" />
+        <ellipse cx="340" cy="500" rx="180" ry="400" fill="url(#smoke-core-right)" filter="url(#smoke-soft-glow)" />
       </svg>
     </div>
   </div>
@@ -3459,7 +3526,7 @@
     initRuler();
     updatePreview();
 
-    // Fundo animado: estrelas cintilantes (carregamento diferido para não impactar FCP/LCP)
+    // Fundo animado: estrelas realistas (carregamento diferido para não impactar FCP/LCP)
     function initStarfield() {
       const canvas = document.getElementById('starfield-canvas');
       if (!canvas) return;
@@ -3474,54 +3541,122 @@
       window.addEventListener('resize', resize, { passive: true });
 
       const stars = [];
-      const colors = ['#F4F4F5', '#00E8CE'];
-      const maxStars = 3;
+      const maxStars = 60; // mais estrelas para céu realista
+
+      // Paleta: brancos quentes/frios + tons sutis de turquesa/ciano
+      const colorPools = [
+        // Estrelas brancas quentes (tipo Sol)
+        { base: '#FFF8E7', glow: '#FFE8A0', weight: 0.35 },
+        { base: '#FFFAF0', glow: '#FFF0D0', weight: 0.25 },
+        // Estrelas brancas frias
+        { base: '#F0F8FF', glow: '#D0E8FF', weight: 0.20 },
+        { base: '#E8F0FF', glow: '#C0D8FF', weight: 0.10 },
+        // Estrelas com toque turquesa (temática do site)
+        { base: '#E0FFF8', glow: '#A0FFE8', weight: 0.07 },
+        { base: '#D0FFF0', glow: '#80FFE0', weight: 0.03 }
+      ];
+
+      // Expande pool ponderado
+      const colorPool = [];
+      colorPools.forEach(c => {
+        const count = Math.round(c.weight * 100);
+        for (let i = 0; i < count; i++) colorPool.push(c);
+      });
+
+      function pickColor() {
+        const c = colorPool[Math.floor(Math.random() * colorPool.length)];
+        return { base: c.base, glow: c.glow };
+      }
 
       function spawnStar() {
         if (stars.length >= maxStars) return;
+        const colors = pickColor();
+        // Tamanho variado: maioria pequenas, algumas médias, poucas grandes
+        const sizeRoll = Math.random();
+        let baseSize, type;
+        if (sizeRoll < 0.70) { baseSize = 0.4 + Math.random() * 0.6; type = 'tiny'; }      // 70% tiny
+        else if (sizeRoll < 0.92) { baseSize = 1.0 + Math.random() * 0.8; type = 'small'; } // 22% small
+        else if (sizeRoll < 0.98) { baseSize = 1.8 + Math.random() * 1.2; type = 'medium'; } // 6% medium
+        else { baseSize = 3.0 + Math.random() * 2.0; type = 'large'; }                       // 2% large
+
         stars.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          r: 1 + Math.random() * 1.5,
-          color: colors[Math.floor(Math.random() * colors.length)],
-          life: 1, // start at 1 so progress > 0 and alpha > 0
-          maxLife: 1500 + Math.random() * 2000
+          baseSize,
+          type,
+          color: colors.base,
+          glowColor: colors.glow,
+          // Cada estrela tem seu próprio ciclo de piscar
+          phase: Math.random() * Math.PI * 2,
+          speed: 0.0008 + Math.random() * 0.0018, // velocidade do twinkle
+          // Para estrelas grandes: chance de ter "cross" (difração)
+          hasCross: type === 'large' && Math.random() < 0.6
         });
+      }
+
+      function drawStar(s, alpha) {
+        const size = s.baseSize * alpha;
+        if (size < 0.3) return;
+
+        // Glow suave atrás
+        if (size > 1.0) {
+          const gradient = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, size * 2.5);
+          gradient.addColorStop(0, s.glowColor);
+          gradient.addColorStop(0.5, s.glowColor.replace(')', ', 0.15)').replace('rgb', 'rgba').replace('#', '')); // fallback simples
+          gradient.addColorStop(1, 'transparent');
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, size * 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = gradient;
+          ctx.globalAlpha = alpha * 0.4;
+          ctx.fill();
+        }
+
+        // Corpo da estrela
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, size, 0, Math.PI * 2);
+        ctx.fillStyle = s.color;
+        ctx.globalAlpha = alpha;
+        ctx.fill();
+
+        // Cross de difração para estrelas brilhantes
+        if (s.hasCross && alpha > 0.5) {
+          const crossLen = size * 3.5;
+          const crossW = Math.max(0.8, size * 0.25);
+          ctx.save();
+          ctx.translate(s.x, s.y);
+          // Vertical
+          ctx.beginPath();
+          ctx.rect(-crossW/2, -crossLen, crossW, crossLen * 2);
+          // Horizontal
+          ctx.rect(-crossLen, -crossW/2, crossLen * 2, crossW);
+          ctx.fillStyle = s.color;
+          ctx.globalAlpha = alpha * 0.6;
+          ctx.fill();
+          ctx.restore();
+        }
       }
 
       function drawStars() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const now = performance.now();
+
         for (const s of stars) {
-          const progress = s.life / s.maxLife;
-          if (progress >= 1) continue;
-          // Alpha: fade in quickly, stay visible, then fade out
-          const alpha = progress < 0.1 ? progress * 10 * 0.85 : Math.sin(Math.min(progress, 0.9) * Math.PI / 0.9) * 0.85;
-          ctx.beginPath();
-          ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-          ctx.fillStyle = s.color;
-          ctx.globalAlpha = alpha;
-          ctx.fill();
+          // Twinkle suave: senoide com fase única por estrela
+          const twinkle = Math.sin(now * s.speed + s.phase);
+          // Mapeia -1..1 para 0.25..1.0 (nunca some totalmente)
+          const alpha = 0.35 + 0.65 * (twinkle * 0.5 + 0.5);
+          drawStar(s, alpha);
         }
         ctx.globalAlpha = 1;
       }
 
       function animate(now) {
-        for (let i = stars.length - 1; i >= 0; i--) {
-          const s = stars[i];
-          s.life += 16;
-          if (s.life >= s.maxLife) {
-            stars.splice(i, 1);
-          }
-        }
-        // Nova estrela a cada ~2s
-        if (Math.random() < 0.008) spawnStar();
         drawStars();
         requestAnimationFrame(animate);
       }
 
-      // Desenha estrelas iniciais imediatamente (para screenshot/teste visual)
-      for (let i = 0; i < 2; i++) spawnStar();
-      drawStars();
+      // Popula céu inicial
+      for (let i = 0; i < maxStars; i++) spawnStar();
       requestAnimationFrame(animate);
     }
 

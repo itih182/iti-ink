@@ -1,0 +1,3536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Primário & Local (Criciúma - SC) -->
+  <title>iti.ink Tattoo Studio | Estúdio de Tatuagem em Criciúma, Santa Catarina</title>
+  <meta name="description" content="Studio iti.ink, mais de 8 anos de experiência com atendimento especializado em Criciúma, Santa Catarina. Rua Campos Novos, 235, Bairro São Luís. Orçamento pelo WhatsApp (48) 98859-5450." />
+  <meta name="keywords" content="tatuagem criciúma, estúdio de tatuagem criciúma, tatuador criciúma, iti.ink, iti.ink tattoo studio, tatuagem bairro são luís criciúma" />
+  <meta name="author" content="iti.ink Tattoo Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#09090B" />
+  <link rel="canonical" href="https://itih182.github.io/iti-ink/" />
+
+  <!-- LCP: fontes críticas -->
+  <link rel="preload" href="fonts/syne-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- LCP: logo do hero -->
+  <link rel="preload" as="image" href="logo.webp" fetchpriority="high" type="image/webp" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Geo Tags para Ranqueamento Local -->
+  <meta name="geo.region" content="BR-SC" />
+  <meta name="geo.placename" content="Criciúma" />
+  <meta name="geo.position" content="-28.6853;-49.3736" />
+  <meta name="ICBM" content="-28.6853, -49.3736" />
+
+  <!-- Open Graph / WhatsApp & Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="iti.ink Tattoo Studio" />
+  <meta property="og:url" content="https://itih182.github.io/iti-ink/" />
+  <meta property="og:title" content="Estúdio de Tatuagem em Criciúma | iti.ink Tattoo Studio" />
+  <meta property="og:description" content="Studio iti.ink, mais de 8 anos de experiência com atendimento especializado em Criciúma, Santa Catarina. WhatsApp (48) 98859-5450." />
+  <meta property="og:image" content="https://itih182.github.io/iti-ink/20230311_192858.jpg" />
+  <meta property="og:image:alt" content="Tatuagem realista de leão coroado feita no Estúdio iti.ink em Criciúma SC" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Estúdio de Tatuagem em Criciúma | iti.ink Tattoo Studio" />
+  <meta name="twitter:description" content="Studio iti.ink, mais de 8 anos de experiência em tatuagem autoral, realismo e blackwork em Criciúma, Santa Catarina." />
+  <meta name="twitter:image" content="https://itih182.github.io/iti-ink/20230311_192858.jpg" />
+
+  <!-- Google Analytics 4 -->
+  <script>
+    window.GA4_MEASUREMENT_ID = 'G-VHEQX37Z1E';
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtagReady = /^G-[A-Z0-9]{6,}$/.test(window.GA4_MEASUREMENT_ID) &&
+      window.GA4_MEASUREMENT_ID.indexOf('XXXX') === -1;
+    if (window.gtagReady) {
+      gtag('js', new Date());
+      gtag('config', window.GA4_MEASUREMENT_ID);
+      (function () {
+        var loaded = false;
+        function loadTag() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_MEASUREMENT_ID;
+          document.head.appendChild(s);
+        }
+        // carrega na primeira interação ou 3s após o load: mantém a thread livre no LCP/TBT
+        ['pointerdown', 'keydown', 'scroll'].forEach(function (ev) {
+          window.addEventListener(ev, loadTag, { once: true, passive: true });
+        });
+        if (document.readyState === 'complete') setTimeout(loadTag, 3000);
+        else window.addEventListener('load', function () { setTimeout(loadTag, 3000); }, { once: true });
+      })();
+    }
+  </script>
+
+  <!-- Dados Estruturados Schema.org (Google Local Business + TattooParlor + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["TattooParlor", "LocalBusiness"],
+        "@id": "https://iti.ink/#tattooparlor",
+        "name": "iti.ink Tattoo Studio",
+        "alternateName": "Studio iti.ink",
+        "description": "Studio iti.ink, mais de 8 anos de experiência com atendimento especializado em Criciúma, Santa Catarina.",
+        "image": [
+          "https://itih182.github.io/iti-ink/20230311_192858.jpg",
+          "https://itih182.github.io/iti-ink/IMG_20260704_223608363_HDR.jpg",
+          "https://itih182.github.io/iti-ink/IMG_20260508_180837116.jpg"
+        ],
+        "telephone": "+55-48-98859-5450",
+        "priceRange": "$$",
+        "currenciesAccepted": "BRL",
+        "paymentAccepted": "Pix, Cartão de Crédito, Cartão de Débito, Dinheiro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Campos Novos, 235",
+          "addressLocality": "Criciúma",
+          "addressRegion": "SC",
+          "postalCode": "88803-320",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -28.6853,
+          "longitude": -49.3736
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Criciúma" },
+          { "@type": "City", "name": "Içara" },
+          { "@type": "City", "name": "Forquilhinha" },
+          { "@type": "City", "name": "Nova Veneza" },
+          { "@type": "City", "name": "Araranguá" }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/iti.ink/",
+          "https://maps.google.com/maps?cid=1194380198543212435"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "19:00",
+            "description": "Atendimento com hora marcada"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O que preciso enviar para pedir um orçamento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para preparar um orçamento preciso, pedimos 2 fotos: uma imagem de referência da ideia e uma foto do local do corpo onde você deseja tatuar, além do tamanho aproximado em centímetros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Onde fica o estúdio iti.ink em Criciúma?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Na Rua Campos Novos, 235 — Bairro São Luís, Criciúma - SC (CEP 88803-320). O atendimento é feito com hora marcada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês adaptam a referência para o meu corpo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Com a referência e a foto do local do corpo, o desenho é ajustado no tamanho e no formato ideais para encaixar bem na pele."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como agendar uma sessão?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depois de alinhar a ideia e o orçamento pelo WhatsApp, escolhemos o melhor dia e horário para a sua sessão."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como cuidar da tatuagem antes e depois da sessão?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Antes da sessão: durma bem, alimente-se, hidrate a pele e evite álcool e sol na região nos dias anteriores. Depois: lave com sabonete neutro, seque sem esfregar, aplique a pomada indicada, evite piscina, mar e sol por 15 dias e não arranque as casquinhas."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Syne (Display), Inter (UI/Corpo), Outfit (Números), Grenze Gotisch (Menu) -->
+  <!-- Fontes self-hosted (latin subset): sem terceiros, sem bloqueio de render -->
+  <style>
+@font-face{font-family:'Grenze Gotisch';font-style:normal;font-weight:600 700;font-display:swap;src:url('fonts/grenze-gotisch-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url('fonts/inter-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Outfit';font-style:normal;font-weight:500 700;font-display:swap;src:url('fonts/outfit-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Syne';font-style:normal;font-weight:700 800;font-display:swap;src:url('fonts/syne-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  </style>
+
+  <!-- Define handleImgFallback antes do parsing do <body> para evitar ReferenceError no onerror das imagens -->
+  <script>
+    window.handleImgFallback = function (imgEl) {
+      if (!imgEl) return;
+      imgEl.onerror = null;
+      imgEl.style.display = 'none';
+      const fallback = imgEl.nextElementSibling;
+      if (fallback && fallback.classList.contains('img-fallback-box')) {
+        fallback.style.display = 'flex';
+      }
+    };
+  </script>
+
+  <!-- CSS Puro e Ultraleve (Zero Frameworks Externos) -->
+  <style>
+    :root {
+      --bg: #09090B;
+      --surface: #141417;
+      --surface-elevated: #1B1B20;
+      --border: #27272A;
+      --text: #F4F4F5;
+      --muted: #A1A1AA;
+      --accent: #00D8C0;
+      --accent-hover: #00F0D6;
+      --accent-dim: rgba(0, 216, 192, 0.13);
+      --accent-glow: rgba(0, 216, 192, 0.35);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 22px;
+      --container: 1200px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 76px;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    /* =====================================================================
+       FUNDO ANIMADO: Estrelas + Fumaça Lateral
+       ===================================================================== */
+    .site-bg-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .starfield-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .smoke-column {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 260px;
+      max-width: 20vw;
+      opacity: 0.50;
+      pointer-events: none;
+    }
+
+    .smoke-column-left {
+      left: 0;
+      transform-origin: left center;
+    }
+
+    .smoke-column-right {
+      right: 0;
+      transform-origin: right center;
+    }
+
+    .smoke-column svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    @media (max-width: 767px) {
+      .smoke-column {
+        width: 160px;
+        max-width: 28vw;
+        opacity: 0.35;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .starfield-canvas {
+        display: none;
+      }
+      .smoke-column {
+        animation: none !important;
+        opacity: 0.25;
+      }
+    }
+
+    /* Tipografia de Display & Números */
+    h1, h2, h3, .font-display {
+      font-family: 'Syne', 'Outfit', sans-serif;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .num {
+      font-family: 'Outfit', sans-serif !important;
+      font-variant-numeric: tabular-nums lining-nums;
+      letter-spacing: -0.01em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea {
+      font-family: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding-inline: 32px;
+      }
+    }
+
+    /* =====================================================================
+       HEADER STICKY
+       ===================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(9, 9, 11, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo-img {
+      height: 50px;
+      width: 50px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 0 10px rgba(0, 216, 192, 0.22));
+    }
+
+    .brand-fallback {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.55rem;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .brand-fallback-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 56px;
+      font-family: 'Grenze Gotisch', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      padding: 8px 6px;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .nav-links {
+        gap: 72px;
+      }
+    }
+
+    .header-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--accent);
+      color: #09090B;
+      font-weight: 700;
+      font-size: 0.875rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .header-wa-btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    /* =====================================================================
+       HERO SECTION
+       ===================================================================== */
+    .hero {
+      position: relative;
+      padding: 56px 0 72px;
+      border-bottom: 1px solid var(--border);
+      background-image:
+        radial-gradient(circle at 50% 12%, rgba(0, 216, 192, 0.13) 0%, rgba(9, 9, 11, 0) 62%),
+        linear-gradient(to right, rgba(39, 39, 42, 0.26) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(39, 39, 42, 0.26) 1px, transparent 1px);
+      background-size: 100% 100%, 48px 48px, 48px 48px;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 84px 0 96px;
+      }
+    }
+
+    .hero-content {
+      max-width: 820px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .hero-logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+    .hero-logo-img {
+      width: 152px;
+      height: 152px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 14px 34px rgba(0, 216, 192, 0.22));
+      transition: transform 0.3s ease;
+    }
+
+    .hero-logo-img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (min-width: 768px) {
+      .hero-logo-img {
+        width: 184px;
+        height: 184px;
+      }
+    }
+
+    .location-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 28px;
+    }
+
+    .location-pill::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero h1 {
+      font-family: 'Grenze Gotisch', serif;
+      font-size: clamp(2.85rem, 7.5vw, 5.2rem);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      line-height: 1.04;
+      color: var(--text);
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      margin-top: 22px;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: var(--muted);
+      max-width: 640px;
+      margin-inline: auto;
+    }
+
+    .hero-sub strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      margin-top: 38px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-wa-giant {
+      width: 100%;
+      max-width: 540px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 20px 28px;
+      border-radius: var(--radius-md);
+      background: var(--accent);
+      color: #09090B;
+      font-weight: 800;
+      font-size: clamp(1rem, 2.5vw, 1.22rem);
+      letter-spacing: 0.01em;
+      box-shadow: 0 14px 40px -10px var(--accent-glow);
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-wa-giant:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 46px -8px rgba(0, 240, 214, 0.5);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 24px;
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.925rem;
+      font-weight: 600;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      background: var(--surface-elevated);
+    }
+
+    .trust-strip {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .trust-strip {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+    }
+
+    .trust-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px 18px;
+      text-align: center;
+    }
+
+    .trust-value {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.15;
+    }
+
+    .trust-value.place {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.65rem;
+      color: var(--text);
+      padding-top: 4px;
+    }
+
+    .trust-label {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* =====================================================================
+       SECTION HEADERS
+       ===================================================================== */
+    .section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding: 96px 0;
+      }
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(1.9rem, 4.2vw, 3rem);
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .section-desc {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 620px;
+    }
+
+    /* =====================================================================
+       PORTFÓLIO (10 FOTOS REAIS — SEM FILTROS OU RÓTULOS)
+       ===================================================================== */
+    .gallery-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .gallery-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    .tattoo-card {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: border-color 0.25s ease, transform 0.25s ease;
+    }
+
+    .tattoo-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .tattoo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s ease;
+    }
+
+    .tattoo-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .tattoo-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(9, 9, 11, 0.72) 0%, transparent 42%);
+      pointer-events: none;
+    }
+
+    .tattoo-index {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: rgba(9, 9, 11, 0.84);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .tattoo-zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      z-index: 2;
+      padding: 5px 10px;
+      border-radius: 8px;
+      background: rgba(9, 9, 11, 0.85);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.75rem;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    .gallery-cta-wrap {
+      margin-top: 36px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-instagram-more {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 52px;
+      padding: 13px 26px;
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.94rem;
+      font-weight: 600;
+      transition: border-color 0.22s ease, background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .btn-instagram-more:hover {
+      border-color: var(--accent);
+      background: var(--surface-elevated);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px -10px var(--accent-glow);
+    }
+
+    .btn-instagram-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(0, 216, 192, 0.35);
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .img-fallback-box {
+      display: none;
+      width: 100%;
+      height: 100%;
+      padding: 48px 16px 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .img-fallback-box code {
+      margin-top: 8px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      font-size: 0.72rem;
+      word-break: break-all;
+    }
+
+    /* =====================================================================
+       ORÇAMENTO EM 3 PASSOS (LOCAL + TAMANHO + IMAGEM DE REFERÊNCIA)
+       ===================================================================== */
+    .quote-section {
+      background: rgba(20, 20, 23, 0.45);
+    }
+
+    .quote-layout {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (min-width: 960px) {
+      .quote-layout {
+        grid-template-columns: 1.35fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    .quote-steps-card,
+    .quote-preview-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+
+    @media (min-width: 640px) {
+      .quote-steps-card,
+      .quote-preview-card {
+        padding: 32px;
+      }
+    }
+
+    .quote-preview-card {
+      border-color: rgba(0, 216, 192, 0.45);
+      position: sticky;
+      top: 96px;
+    }
+
+    .step-block + .step-block {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .step-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #09090B;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    @media (min-width: 640px) {
+      .pill-grid.cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .option-pill {
+      min-height: 48px;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .option-pill:hover {
+      border-color: #52525B;
+      color: var(--text);
+    }
+
+    .option-pill.active {
+      background: var(--accent-dim);
+      border-color: var(--accent);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .field-label {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .text-input {
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.92rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .text-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    textarea.text-input {
+      min-height: 116px;
+      resize: vertical;
+      line-height: 1.55;
+    }
+
+    /* Bloco Retangular de Fotos e Avaliação da Pele */
+    .photo-eval-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .photo-eval-box {
+        padding: 22px;
+      }
+    }
+
+    .photo-eval-intro {
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .photo-eval-intro p + p {
+      margin-top: 8px;
+    }
+
+    .photo-eval-intro strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Régua Interativa 0 a 50 cm */
+    .ruler-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 18px 20px;
+    }
+
+    .ruler-readout-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .ruler-hint {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .ruler-value-badge {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      padding: 6px 14px;
+      border-radius: 10px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(0, 216, 192, 0.45);
+      color: var(--accent);
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .ruler-value-badge small {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .ruler-track-wrap {
+      position: relative;
+      height: 62px;
+      user-select: none;
+      touch-action: pan-y;
+    }
+
+    .ruler-base-line {
+      position: absolute;
+      left: 13px;
+      right: 13px;
+      top: 18px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--border);
+    }
+
+    .ruler-active-fill {
+      position: absolute;
+      left: 13px;
+      top: 18px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--accent);
+      width: 30%;
+      pointer-events: none;
+    }
+
+    .ruler-ticks {
+      position: absolute;
+      inset: 22px 0 0 0;
+      pointer-events: none;
+    }
+
+    .ruler-tick {
+      position: absolute;
+      top: 0;
+      width: 1px;
+      background: #3F3F46;
+      transform: translateX(-50%);
+    }
+
+    .ruler-tick.med {
+      height: 11px;
+      background: #71717A;
+    }
+
+    .ruler-tick.major {
+      height: 16px;
+      width: 1.5px;
+      background: #A1A1AA;
+    }
+
+    .ruler-tick-label {
+      position: absolute;
+      top: 19px;
+      transform: translateX(-50%);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .ruler-slider {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 100%;
+      height: 36px;
+      margin: 0;
+      background: transparent;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: grab;
+      z-index: 3;
+    }
+
+    .ruler-slider:active {
+      cursor: grabbing;
+    }
+
+    .ruler-slider::-webkit-slider-runnable-track {
+      height: 36px;
+      background: transparent;
+    }
+
+    .ruler-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 26px;
+      height: 32px;
+      margin-top: 2px;
+      border-radius: 8px;
+      background: var(--accent);
+      border: 2px solid #09090B;
+      box-shadow: 0 0 0 2px var(--accent), 0 6px 16px rgba(0, 216, 192, 0.45);
+      transition: transform 0.12s ease, background 0.15s ease;
+    }
+
+    .ruler-slider::-webkit-slider-thumb:hover {
+      background: var(--accent-hover);
+      transform: scale(1.06);
+    }
+
+    .ruler-slider::-moz-range-track {
+      height: 36px;
+      background: transparent;
+    }
+
+    .ruler-slider::-moz-range-thumb {
+      width: 26px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent);
+      border: 2px solid #09090B;
+      box-shadow: 0 0 0 2px var(--accent), 0 6px 16px rgba(0, 216, 192, 0.45);
+      transition: transform 0.12s ease, background 0.15s ease;
+    }
+
+    /* Grade Dupla de Uploads (Referência + Local do Corpo) */
+    .dual-upload-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .dual-upload-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Dropzone de Fotos */
+    .ref-dropzone {
+      border: 1.5px dashed var(--border);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 158px;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .ref-dropzone:hover,
+    .ref-dropzone.dragover {
+      border-color: var(--accent);
+      background: rgba(0, 216, 192, 0.05);
+    }
+
+    .ref-dropzone.has-file {
+      border-style: solid;
+      border-color: rgba(0, 216, 192, 0.55);
+    }
+
+    .ref-upload-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 8px;
+      padding: 6px;
+      cursor: pointer;
+    }
+
+    .ref-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ref-upload-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    .ref-upload-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .ref-upload-sub {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .ref-preview-box {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ref-preview-box.visible {
+      display: flex;
+    }
+
+    .ref-preview-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .ref-thumb {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid var(--accent);
+      flex-shrink: 0;
+    }
+
+    .ref-name {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .ref-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+
+    .btn-remove-ref {
+      align-self: flex-start;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-remove-ref:hover {
+      border-color: #F43F5E;
+      color: #FDA4AF;
+    }
+
+    .clip-quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .btn-clip-mini {
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: var(--bg);
+      border: 1px solid rgba(0, 216, 192, 0.45);
+      color: var(--text);
+      font-size: 0.74rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-clip-mini:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* Prévia e Botão Principal de Envio no Orçamento */
+    .preview-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.82rem;
+    }
+
+    .preview-tag {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+
+    .message-box {
+      padding: 16px;
+      border-radius: var(--radius-md);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    .clipboard-banner {
+      display: none;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(0, 216, 192, 0.08);
+      border: 1px solid rgba(0, 216, 192, 0.35);
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .clipboard-banner.visible {
+      display: block;
+    }
+
+    .clipboard-banner strong {
+      color: var(--accent);
+    }
+
+    .btn-submit-wa {
+      margin-top: 18px;
+      width: 100%;
+      min-height: 56px;
+      padding: 14px 22px;
+      border: none;
+      border-radius: var(--radius-md);
+      background: var(--accent);
+      color: #09090B;
+      font-weight: 800;
+      font-size: 0.98rem;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      box-shadow: 0 12px 32px -10px var(--accent-glow);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-submit-wa:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-copy-text {
+      margin-top: 10px;
+      width: 100%;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-copy-text:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    /* =====================================================================
+       ESTÚDIO, LOCALIZAÇÃO & FAQ
+       ===================================================================== */
+    .studio-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .studio-grid {
+        grid-template-columns: 1.05fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    .studio-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    @media (min-width: 640px) {
+      .studio-card {
+        padding: 32px;
+      }
+    }
+
+    .studio-bio {
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.65;
+    }
+
+    .studio-bio strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .info-list {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-label {
+      font-size: 0.74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    .info-value {
+      margin-top: 2px;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .info-sub {
+      margin-top: 2px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .studio-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .studio-actions a {
+      flex: 1 1 200px;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .studio-actions a:hover {
+      border-color: var(--accent) !important;
+      transform: translateY(-1px);
+    }
+
+    .faq-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item[open] {
+      border-color: rgba(0, 216, 192, 0.45);
+    }
+
+    .faq-item summary {
+      list-style: none;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-plus {
+      color: var(--accent);
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item[open] .faq-plus {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 20px 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* =====================================================================
+       FOOTER
+       ===================================================================== */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 0;
+      background: #070709;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 768px) {
+      .footer-inner {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    .footer-brand {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--text);
+    }
+
+    .footer-brand span {
+      color: var(--accent);
+    }
+
+    /* =====================================================================
+       BARRA FIXA MOBILE + BOTÃO FLUTUANTE DESKTOP (SEM DUPLICAÇÃO)
+       ===================================================================== */
+    .mobile-sticky-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 45;
+      padding: 12px 16px;
+      background: rgba(9, 9, 11, 0.94);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border);
+    }
+
+    .mobile-sticky-bar a {
+      width: 100%;
+      min-height: 50px;
+      border-radius: var(--radius-sm);
+      background: var(--accent);
+      color: #09090B;
+      font-weight: 800;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .desktop-float-wa {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-sticky-bar {
+        display: none;
+      }
+
+      .desktop-float-wa {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 45;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 20px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #09090B;
+        font-weight: 800;
+        font-size: 0.9rem;
+        box-shadow: 0 14px 34px -8px rgba(0, 216, 192, 0.55);
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .desktop-float-wa:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+      }
+    }
+
+    /* =====================================================================
+       LIGHTBOX FULLSCREEN MODAL
+       ===================================================================== */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      background: rgba(5, 5, 7, 0.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-panel {
+      width: 100%;
+      max-width: 980px;
+      max-height: 90vh;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 820px) {
+      .lightbox-panel {
+        grid-template-columns: 1.35fr 1fr;
+      }
+    }
+
+    .lightbox-stage {
+      position: relative;
+      background: #050507;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 320px;
+      max-height: 78vh;
+    }
+
+    .lightbox-stage img {
+      max-width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lb-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(9, 9, 11, 0.85);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .lb-nav-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .lb-prev { left: 12px; }
+    .lb-next { right: 12px; }
+
+    .lightbox-side {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .lightbox-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .lb-close {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .lb-close:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    .lb-caption {
+      margin-top: 14px;
+      font-size: 0.96rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* =====================================================================
+       AVALIAÇÕES GOOGLE
+       ===================================================================== */
+    .reviews-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+    }
+
+    .review-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+
+    .review-stars {
+      color: #FBBF24;
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+    }
+
+    .review-text {
+      color: var(--text);
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .review-author {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .review-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: var(--accent-dim);
+      border: 1px solid rgba(0, 216, 192, 0.35);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .review-name {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .review-source {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .reviews-actions {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .reviews-actions {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .btn-google-maps,
+    .btn-google-review {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 13px 24px;
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: border-color 0.22s ease, background 0.22s ease, transform 0.22s ease;
+    }
+
+    .btn-google-maps {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-google-review {
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      color: #09090B;
+    }
+
+    .btn-google-maps:hover {
+      border-color: var(--accent);
+      background: var(--surface-elevated);
+      transform: translateY(-2px);
+    }
+
+    .btn-google-review:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* =====================================================================
+       TATUADOR + LGPD
+       ===================================================================== */
+    .artist-card {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 18px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+    }
+
+    @media (min-width: 640px) {
+      .artist-card {
+        flex-direction: row;
+        text-align: left;
+        gap: 22px;
+        padding: 26px 28px;
+      }
+    }
+
+    .artist-photo-wrap {
+      width: 104px;
+      height: 104px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--accent);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .artist-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .artist-monogram {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    .artist-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .artist-role {
+      margin-top: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .artist-bio {
+      margin-top: 8px;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .lgpd-note {
+      margin-top: 16px;
+      font-size: 0.76rem;
+      line-height: 1.5;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .privacy-details {
+      margin-top: 24px;
+      max-width: 760px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+    }
+
+    .privacy-details summary {
+      padding: 14px 18px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .privacy-details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .privacy-details summary::before {
+      content: "▸ ";
+      color: var(--accent);
+    }
+
+    .privacy-details[open] summary::before {
+      content: "▾ ";
+    }
+
+    .privacy-details p {
+      padding: 0 18px 16px;
+      font-size: 0.8rem;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      font-size: 0.84rem;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      top: 88px;
+      right: 20px;
+      z-index: 70;
+      max-width: 340px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      color: var(--text);
+      font-size: 0.85rem;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.55);
+      transform: translateX(130%);
+      transition: transform 0.28s ease;
+    }
+
+    .toast.show {
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fundo Animado: Estrelas + Fumaça Lateral -->
+  <div class="site-bg-canvas" aria-hidden="true">
+    <canvas id="starfield-canvas" class="starfield-canvas"></canvas>
+    <div class="smoke-column smoke-column-left" aria-hidden="true">
+      <svg width="100%" height="100%" viewBox="0 0 400 1000" preserveAspectRatio="none">
+        <defs>
+          <filter id="smoke-turbulence-left">
+            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.004" numOctaves="4" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G" />
+            <feGaussianBlur stdDeviation="1.5" />
+          </filter>
+          <linearGradient id="smoke-gradient-left" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00F0D6" stop-opacity="0.50" />
+            <stop offset="50%" stop-color="#00D8C0" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#00A898" stop-opacity="0.15" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="1000" fill="url(#smoke-gradient-left)" filter="url(#smoke-turbulence-left)" />
+      </svg>
+    </div>
+    <div class="smoke-column smoke-column-right" aria-hidden="true">
+      <svg width="100%" height="100%" viewBox="0 0 400 1000" preserveAspectRatio="none">
+        <defs>
+          <filter id="smoke-turbulence-right">
+            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.004" numOctaves="4" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G" />
+            <feGaussianBlur stdDeviation="1.5" />
+          </filter>
+          <linearGradient id="smoke-gradient-right" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#00F0D6" stop-opacity="0.50" />
+            <stop offset="50%" stop-color="#00D8C0" stop-opacity="0.35" />
+            <stop offset="100%" stop-color="#00A898" stop-opacity="0.15" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="1000" fill="url(#smoke-gradient-right)" filter="url(#smoke-turbulence-right)" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       HEADER STICKY
+       ======================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="iti.ink Tattoo Studio Início">
+        <picture>
+          <source srcset="logo.webp" type="image/webp" />
+          <img
+            src="logo.png"
+            alt="Logo oficial iti.ink Tattoo Since 2017"
+            width="50"
+            height="50"
+            class="brand-logo-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"
+          />
+        </picture>
+        <span class="brand-fallback">
+          <span class="brand-fallback-dot" aria-hidden="true"></span>
+          iti.ink
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#estudio">Estúdio</a>
+      </nav>
+
+      <a
+        href="https://wa.me/5548988595450?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Est%C3%BAdio%20iti.ink%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20tatuagem."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-wa-btn"
+        onclick="trackWhatsAppClick('header')"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+        </svg>
+        <span class="num">(48) 98859-5450</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- =====================================================================
+         HERO SECTION
+         ===================================================================== -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-logo-wrap">
+          <picture>
+            <source srcset="logo.webp" type="image/webp" />
+            <img
+              src="logo.png"
+              alt="Emblema oficial iti.ink Tattoo Since 2017 — Estúdio de Tatuagem em Criciúma SC"
+              width="184"
+              height="184"
+              class="hero-logo-img"
+              fetchpriority="high"
+              onerror="this.parentElement.style.display='none';"
+            />
+          </picture>
+        </div>
+
+        <div class="location-pill">CRICIÚMA • SC</div>
+
+        <h1>Estúdio de Tatuagem em <span>Criciúma</span> — iti.ink</h1>
+
+        <p class="hero-sub">
+          <strong>Studio iti.ink</strong>, mais de <span class="num">8</span> anos de experiência com atendimento especializado em Criciúma, Santa Catarina.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/5548988595450?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Est%C3%BAdio%20iti.ink%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20de%20tatuagem."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-wa-giant"
+            onclick="trackWhatsAppClick('hero')"
+          >
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.486 2 2 6.486 2 12c0 1.766.462 3.494 1.339 5.019L2 22l5.123-1.344A9.946 9.946 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2z"/>
+            </svg>
+            <span>CHAME AQUI PARA ORÇAMENTO</span>
+          </a>
+
+          <a href="#trabalhos" class="btn-secondary">Ver trabalhos ↓</a>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-card">
+            <span class="trust-value num">8+</span>
+            <span class="trust-label">Anos de experiência</span>
+          </div>
+          <div class="trust-card">
+            <span class="trust-value place">Atendimento individual</span>
+            <span class="trust-label">Com hora marcada</span>
+          </div>
+          <div class="trust-card">
+            <span class="trust-value place">Projetos exclusivos</span>
+            <span class="trust-label">Adaptados à sua pele</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         PORTFÓLIO (EXATAMENTE AS 10 FOTOS REAIS)
+         ===================================================================== -->
+    <section id="trabalhos" class="section">
+      <div class="container">
+        <span class="section-eyebrow">Portfólio</span>
+        <h2 class="section-title">Trabalhos Recentes</h2>
+        <p class="section-desc">
+          Algumas tatuagens feitas no estúdio. Clique na foto para ampliar.
+        </p>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- 01 -->
+          <div class="tattoo-card" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="Ampliar trabalho 01">
+            <span class="tattoo-index num">01</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="20230311_192858-480.webp 480w, 20230311_192858-720.webp 720w, 20230311_192858.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="20230311_192858.jpg"
+              alt="Fechamento de antebraço e mão em realismo preto e cinza com leão coroado, relógio e rosa no Estúdio iti.ink em Criciúma SC"
+              width="1000"
+              height="750"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 01 pronta para exibição</span>
+              <code>20230311_192858.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 02 -->
+          <div class="tattoo-card" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="Ampliar trabalho 02">
+            <span class="tattoo-index num">02</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="20230411_201256-480.webp 480w, 20230411_201256-720.webp 720w, 20230411_201256.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="20230411_201256.jpg"
+              alt="Tatuagem colorida do escudo e estrelas do Criciúma E.C. na perna realizada no Estúdio iti.ink em Criciúma SC"
+              width="1000"
+              height="1333"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 02 pronta para exibição</span>
+              <code>20230411_201256.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 03 -->
+          <div class="tattoo-card" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="Ampliar trabalho 03">
+            <span class="tattoo-index num">03</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="20230425_154523-480.webp 480w, 20230425_154523-720.webp 720w, 20230425_154523.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="20230425_154523.jpg"
+              alt="Tatuagem autoral blackwork e rastelado de adaga com rosto feminino e corda no antebraço no Estúdio iti.ink Criciúma"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 03 pronta para exibição</span>
+              <code>20230425_154523.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 04 -->
+          <div class="tattoo-card" onclick="openLightbox(3)" role="button" tabindex="0" aria-label="Ampliar trabalho 04">
+            <span class="tattoo-index num">04</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20260316_121742-480.webp 480w, IMG_20260316_121742-720.webp 720w, IMG_20260316_121742.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20260316_121742.jpg"
+              alt="Tatuagem cyber sigilism e tribal moderno em blackwork na lombar realizada no Estúdio iti.ink em Criciúma SC"
+              width="1000"
+              height="1336"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 04 pronta para exibição</span>
+              <code>IMG_20260316_121742.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 05 -->
+          <div class="tattoo-card" onclick="openLightbox(4)" role="button" tabindex="0" aria-label="Ampliar trabalho 05">
+            <span class="tattoo-index num">05</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20260414_205827662-480.webp 480w, IMG_20260414_205827662-720.webp 720w, IMG_20260414_205827662.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20260414_205827662.jpg"
+              alt="Tatuagem fine line delicada no antebraço com escrita Aurora, data e borboletas no Estúdio iti.ink Criciúma"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 05 pronta para exibição</span>
+              <code>IMG_20260414_205827662.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 06 -->
+          <div class="tattoo-card" onclick="openLightbox(5)" role="button" tabindex="0" aria-label="Ampliar trabalho 06">
+            <span class="tattoo-index num">06</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20260508_180837116-480.webp 480w, IMG_20260508_180837116-720.webp 720w, IMG_20260508_180837116.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20260508_180837116.jpg"
+              alt="Tatuagem realismo preto e cinza de retrato infantil soprando beijo no antebraço no Estúdio iti.ink Criciúma SC"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 06 pronta para exibição</span>
+              <code>IMG_20260508_180837116.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 07 -->
+          <div class="tattoo-card" onclick="openLightbox(6)" role="button" tabindex="0" aria-label="Ampliar trabalho 07">
+            <span class="tattoo-index num">07</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20260605_234303379-480.webp 480w, IMG_20260605_234303379-720.webp 720w, IMG_20260605_234303379.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20260605_234303379.jpg"
+              alt="Tatuagem anime blackwork de Tanjiro Kamado Demon Slayer no antebraço realizada no Estúdio iti.ink Criciúma"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 07 pronta para exibição</span>
+              <code>IMG_20260605_234303379.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 08 -->
+          <div class="tattoo-card" onclick="openLightbox(7)" role="button" tabindex="0" aria-label="Ampliar trabalho 08">
+            <span class="tattoo-index num">08</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20260704_223608363_HDR-480.webp 480w, IMG_20260704_223608363_HDR-720.webp 720w, IMG_20260704_223608363_HDR.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20260704_223608363_HDR.jpg"
+              alt="Fechamento de braço em realismo preto e cinza com figura mitológica, signos do zodíaco e anjo no Estúdio iti.ink Criciúma"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 08 pronta para exibição</span>
+              <code>IMG_20260704_223608363_HDR.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 09 -->
+          <div class="tattoo-card" onclick="openLightbox(8)" role="button" tabindex="0" aria-label="Ampliar trabalho 09">
+            <span class="tattoo-index num">09</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20260904_170700334-480.webp 480w, IMG_20260904_170700334-720.webp 720w, IMG_20260904_170700334.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20260904_170700334.jpg"
+              alt="Tatuagem biomecânica anatômica colorida realista de ossos e músculos no antebraço no Estúdio iti.ink Criciúma SC"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 09 pronta para exibição</span>
+              <code>IMG_20260904_170700334.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+
+          <!-- 10 -->
+          <div class="tattoo-card" onclick="openLightbox(9)" role="button" tabindex="0" aria-label="Ampliar trabalho 10">
+            <span class="tattoo-index num">10</span>
+                        <picture>
+              <source
+                type="image/webp"
+                srcset="IMG_20261016_210707414-480.webp 480w, IMG_20261016_210707414-720.webp 720w, IMG_20261016_210707414.webp 1000w"
+                sizes="(min-width: 1024px) 260px, (min-width: 640px) 45vw, 92vw"
+              />
+              <img
+              src="IMG_20261016_210707414.jpg"
+              alt="Tatuagem blackwork e sombreada de centopeia com flores vermelhas no ombro e braço no Estúdio iti.ink Criciúma"
+              width="1000"
+              height="1333"
+              loading="lazy"
+              onerror="handleImgFallback(this)"
+              />
+            </picture>
+            <div class="img-fallback-box">
+              <span>Foto 10 pronta para exibição</span>
+              <code>IMG_20261016_210707414.jpg</code>
+            </div>
+            <span class="tattoo-zoom-hint">Ampliar</span>
+          </div>
+        </div>
+
+        <div class="gallery-cta-wrap">
+          <a
+            href="https://www.instagram.com/iti.ink/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-instagram-more"
+            aria-label="Acompanhar mais trabalhos no Instagram oficial @iti.ink"
+          >
+            <span class="btn-instagram-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </span>
+            <span>Ver mais trabalhos no Instagram <strong style="color:var(--accent);">@iti.ink</strong> ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         ORÇAMENTO EM 3 PASSOS (LOCAL + RÉGUA 0-50 CM + DUAS FOTOS)
+         ===================================================================== -->
+    <section id="orcamento" class="section quote-section">
+      <div class="container">
+        <span class="section-eyebrow">Orçamento</span>
+        <h2 class="section-title">Solicitar Orçamento</h2>
+        <p class="section-desc">
+          Escolha o local, marque o tamanho na régua e adicione as fotos para enviar direto no WhatsApp.
+        </p>
+
+        <div class="quote-layout">
+          <!-- Coluna dos Passos -->
+          <div class="quote-steps-card">
+            <!-- PASSO 01: LOCAL DO CORPO -->
+            <div class="step-block" style="margin-top:0; padding-top:0; border-top:none;">
+              <div class="step-header">
+                <span class="step-badge num">01</span>
+                <h3 class="step-title">Local do corpo</h3>
+              </div>
+              <div class="pill-grid cols-3" id="body-part-options">
+                <button type="button" class="option-pill active" data-val="Antebraço" onclick="setBodyPart(this)">Antebraço</button>
+                <button type="button" class="option-pill" data-val="Braço / Ombro" onclick="setBodyPart(this)">Braço / Ombro</button>
+                <button type="button" class="option-pill" data-val="Fechamento de Braço" onclick="setBodyPart(this)">Fechamento de Braço</button>
+                <button type="button" class="option-pill" data-val="Perna / Panturrilha" onclick="setBodyPart(this)">Perna / Panturrilha</button>
+                <button type="button" class="option-pill" data-val="Costas / Lombar" onclick="setBodyPart(this)">Costas / Lombar</button>
+                <button type="button" class="option-pill" data-val="Peito / Costela" onclick="setBodyPart(this)">Peito / Costela</button>
+                <button type="button" class="option-pill" data-val="Mão / Pescoço" onclick="setBodyPart(this)">Mão / Pescoço</button>
+                <button type="button" class="option-pill" data-val="Outro local" onclick="setBodyPart(this)">Outro local</button>
+              </div>
+            </div>
+
+            <!-- PASSO 02: TAMANHO EM CENTÍMETROS (RÉGUA 0 A 50 CM) -->
+            <div class="step-block">
+              <div class="step-header">
+                <span class="step-badge num">02</span>
+                <h3 class="step-title">Tamanho aproximado na régua (<span class="num">0</span> a <span class="num">50</span> cm)</h3>
+              </div>
+
+              <div class="ruler-card">
+                <div class="ruler-readout-row">
+                  <span class="ruler-hint">Arraste o marcador para escolher</span>
+                  <span class="ruler-value-badge num">
+                    <span id="ruler-cm-value">15</span>
+                    <small>cm</small>
+                  </span>
+                </div>
+
+                <div class="ruler-track-wrap">
+                  <div class="ruler-base-line"></div>
+                  <div class="ruler-active-fill" id="ruler-active-fill"></div>
+                  <div class="ruler-ticks" id="ruler-ticks"></div>
+                  <input
+                    type="range"
+                    id="size-ruler"
+                    class="ruler-slider"
+                    min="0"
+                    max="50"
+                    step="1"
+                    value="15"
+                    aria-label="Tamanho aproximado da tatuagem em centímetros de 0 a 50"
+                    oninput="onRulerChange(this.value)"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- PASSO 03: ORÇAMENTO (FOTOS + OBSERVAÇÃO ACOPLADAS) -->
+            <div class="step-block">
+              <div class="step-header">
+                <span class="step-badge num">03</span>
+                <h3 class="step-title">Orçamento</h3>
+              </div>
+
+              <div class="photo-eval-box">
+                <div class="photo-eval-intro">
+                  <p>
+                    <strong>Por que precisamos da foto do local do corpo?</strong> Cada pele tem suas próprias características. Ver a região ajuda a avaliar a <strong>textura e o tom da pele</strong>, identificar possíveis <strong>cicatrizes, manchas ou marcas</strong> e planejar o melhor encaixe anatômico para o desenho.
+                  </p>
+                  <p>
+                    <strong>Por que precisamos da imagem de referência?</strong> Ela mostra o estilo, o nível de detalhes e o caminho visual que você imagina para a tatuagem.
+                  </p>
+                </div>
+
+                <div class="dual-upload-grid">
+                  <!-- 3A: IMAGEM DE REFERÊNCIA -->
+                  <div
+                    class="ref-dropzone"
+                    id="dropzone-ref"
+                    ondragover="onSlotDragOver(event, 'ref')"
+                    ondragleave="onSlotDragLeave(event, 'ref')"
+                    ondrop="onSlotDrop(event, 'ref')"
+                  >
+                    <label for="input-ref" class="ref-upload-label" id="empty-ref">
+                      <span class="ref-icon-box" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </span>
+                      <span class="ref-upload-tag">Foto <span class="num">1</span> de <span class="num">2</span> • Ideia</span>
+                      <span class="ref-upload-title">Imagem de referência</span>
+                      <span class="ref-upload-sub">Toque ou arraste a referência</span>
+                    </label>
+
+                    <input type="file" id="input-ref" accept="image/*" hidden onchange="onSlotFileSelect(event, 'ref')" />
+
+                    <div class="ref-preview-box" id="filled-ref">
+                      <div class="ref-preview-info">
+                        <img id="thumb-ref" class="ref-thumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Prévia da imagem de referência" />
+                        <div style="min-width:0;">
+                          <span class="ref-badge">✓ Referência anexada</span>
+                          <p class="ref-name" id="name-ref">referencia.jpg</p>
+                        </div>
+                      </div>
+                      <button type="button" class="btn-remove-ref" onclick="clearSlotImage('ref')">Remover</button>
+                    </div>
+                  </div>
+
+                  <!-- 3B: FOTO DO LOCAL DO CORPO -->
+                  <div
+                    class="ref-dropzone"
+                    id="dropzone-body"
+                    ondragover="onSlotDragOver(event, 'body')"
+                    ondragleave="onSlotDragLeave(event, 'body')"
+                    ondrop="onSlotDrop(event, 'body')"
+                  >
+                    <label for="input-body" class="ref-upload-label" id="empty-body">
+                      <span class="ref-icon-box" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                          <circle cx="12" cy="13" r="3"></circle>
+                        </svg>
+                      </span>
+                      <span class="ref-upload-tag">Foto <span class="num">2</span> de <span class="num">2</span> • Pele e Região</span>
+                      <span class="ref-upload-title">Foto do local do corpo</span>
+                      <span class="ref-upload-sub">Toque ou arraste a foto</span>
+                    </label>
+
+                    <input type="file" id="input-body" accept="image/*" hidden onchange="onSlotFileSelect(event, 'body')" />
+
+                    <div class="ref-preview-box" id="filled-body">
+                      <div class="ref-preview-info">
+                        <img id="thumb-body" class="ref-thumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Prévia da foto do local do corpo" />
+                        <div style="min-width:0;">
+                          <span class="ref-badge">✓ Foto do corpo anexada</span>
+                          <p class="ref-name" id="name-body">local-corpo.jpg</p>
+                        </div>
+                      </div>
+                      <button type="button" class="btn-remove-ref" onclick="clearSlotImage('body')">Remover</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- OBSERVAÇÃO ACOPLADA -->
+                <div style="margin-top:20px; padding-top:18px; border-top:1px solid var(--border);">
+                  <label for="idea-note" class="field-label" style="margin-top:0;">
+                    Explique o que você imaginou, o que mais gostou na referência ou detalhes que gostaria de adaptar:
+                  </label>
+                  <textarea
+                    id="idea-note"
+                    class="text-input"
+                    rows="4"
+                    placeholder="Ex: Quero usar essa referência como base, mas deixando o sombreado mais suave e adaptando o formato para acompanhar o antebraço..."
+                    oninput="updatePreview()"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna de Prévia & Envio -->
+          <div class="quote-preview-card">
+            <div class="preview-top">
+              <span class="preview-tag">Resumo do Orçamento</span>
+              <span class="num" style="color:var(--muted);">(48) 98859-5450</span>
+            </div>
+
+            <div class="message-box" id="wa-preview-box"></div>
+
+            <div class="clipboard-banner" id="clipboard-banner">
+              <span id="clipboard-banner-text">
+                <strong>Foto copiada!</strong> Cole (<span class="num">Ctrl+V</span> ou <em>Colar</em>) na conversa do WhatsApp e envie as <span class="num">2</span> imagens logo abaixo.
+              </span>
+              <div class="clip-quick-actions" id="clip-quick-actions"></div>
+            </div>
+
+            <p class="lgpd-note">
+              Suas fotos ficam no seu navegador até o envio e são usadas somente para avaliar a pele e montar o seu orçamento.
+            </p>
+
+            <button type="button" class="btn-submit-wa" onclick="sendQuoteWhatsApp()">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              <span>ENVIAR NO WHATSAPP</span>
+            </button>
+
+            <button type="button" class="btn-copy-text" onclick="copyTextFallback()">
+              Copiar texto do orçamento
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         AVALIAÇÕES REAIS DO GOOGLE
+         ===================================================================== -->
+    <section id="avaliacoes" class="section">
+      <div class="container">
+        <span class="section-eyebrow">Avaliações</span>
+        <h2 class="section-title">Quem já tatuou aqui</h2>
+        <p class="section-desc">
+          Avaliações reais publicadas no Perfil da Empresa do Estúdio iti.ink no Google.
+        </p>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <span class="review-stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="review-text">“Ótimo profissional, arte linda e ambiente aconchegante, super recomendo!”</p>
+            <div class="review-author">
+              <span class="review-avatar" aria-hidden="true">A</span>
+              <div>
+                <div class="review-name">Alice Silva Gerônimo</div>
+                <div class="review-source">Google • 5,0 ★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <span class="review-stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="review-text">“O melhor dos melhores, obras exclusivas, com qualidade e durabilidade, mão super leve e um querido”</p>
+            <div class="review-author">
+              <span class="review-avatar" aria-hidden="true">F</span>
+              <div>
+                <div class="review-name">Franciele França</div>
+                <div class="review-source">Google • 5,0 ★</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <span class="review-stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="review-text">“Fiz uma tattoo REALISTA na iti.ink e me surprendi com o resultado... Ótimo ambiente, atendimento e trampo de primeira.. Recomendoo!!!”</p>
+            <div class="review-author">
+              <span class="review-avatar" aria-hidden="true">J</span>
+              <div>
+                <div class="review-name">Jorge Antonio Simão Junior</div>
+                <div class="review-source">Google • 5,0 ★</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="reviews-actions">
+          <a
+            href="https://maps.google.com/maps?cid=1194380198543212435"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-google-maps"
+          >
+            Ver todas as avaliações no Google Maps ↗
+          </a>
+          <a
+            href="https://search.google.com/local/writereview?placeid=ChIJPd16r_WDIZURk7_tZHZKkxA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-google-review"
+          >
+            Deixar uma avaliação no Google ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         ESTÚDIO, LOCALIZAÇÃO & FAQ (SEO LOCAL CRICIÚMA - SC)
+         ===================================================================== -->
+    <section id="estudio" class="section" style="border-bottom:none;">
+      <div class="container">
+        <span class="section-eyebrow">Localização e Dúvidas</span>
+        <h2 class="section-title">O Estúdio</h2>
+
+        <div class="artist-card">
+          <div class="artist-photo-wrap">
+            <picture>
+              <source srcset="tatuador.webp" type="image/webp" />
+              <img
+                src="tatuador.jpg"
+                alt="Itiberê Riffel, tatuador responsável pelo Estúdio iti.ink em Criciúma SC"
+                class="artist-photo"
+                width="104"
+                height="104"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+            </picture>
+            <span class="artist-monogram" style="display:none;" aria-hidden="true">
+              IR<span style="display:block; font-family:'Inter',sans-serif; font-size:0.55rem; letter-spacing:0.14em; color:var(--muted); margin-top:2px;">DESDE 2017</span>
+            </span>
+          </div>
+          <div>
+            <h3 class="artist-name">O Tatuador — Itiberê Riffel</h3>
+            <div class="artist-role">Desde 2017</div>
+            <p class="artist-bio">
+              Mais de <span class="num">8</span> anos de experiência em realismo, blackwork e projetos autorais.
+              Atendimento individual, do desenho à cicatrização.
+            </p>
+          </div>
+        </div>
+
+        <div class="studio-grid">
+          <!-- Cartão de Endereço e Contato -->
+          <div class="studio-card">
+            <div>
+              <h3 style="font-size:1.5rem; margin-bottom:12px;">Estúdio iti.ink</h3>
+              <p class="studio-bio">
+                O <strong>Estúdio iti.ink</strong> fica no bairro São Luís, em Criciúma, Santa Catarina. Atendimento individual com hora marcada, mais de <strong class="num">8</strong> anos de experiência e material <strong class="num">100%</strong> descartável.
+              </p>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="info-label">Endereço</div>
+                    <div class="info-value">Rua Campos Novos, <span class="num">235</span> — Bairro São Luís</div>
+                    <div class="info-sub">Criciúma - SC • CEP <span class="num">88803-320</span></div>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <span class="info-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="info-label">Atendimento</div>
+                    <div class="info-value">Domingo a Sábado • <span class="num">09</span>h às <span class="num">19</span>h</div>
+                    <div class="info-sub">Somente com hora marcada</div>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <span class="info-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </span>
+                  <div>
+                    <div class="info-label">Instagram</div>
+                    <div class="info-value">
+                      <a href="https://www.instagram.com/iti.ink/" target="_blank" rel="noopener noreferrer">@iti.ink ↗</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="studio-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Campos+Novos+235+Sao+Luis+Criciuma+SC"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="background:var(--bg); border:1px solid var(--border); color:var(--text);"
+              >
+                Abrir no Google Maps ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="faq-stack">
+            <details class="faq-item" open>
+              <summary>
+                <span>O que preciso enviar para pedir um orçamento?</span>
+                <span class="faq-plus">+</span>
+              </summary>
+              <div class="faq-answer">
+                Para preparar um orçamento preciso, pedimos <span class="num">2</span> fotos: uma <strong style="color:var(--text);">imagem de referência</strong> da ideia e uma <strong style="color:var(--text);">foto do local do corpo</strong> onde você deseja tatuar, além do tamanho aproximado em centímetros.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Onde fica o estúdio iti.ink em Criciúma?</span>
+                <span class="faq-plus">+</span>
+              </summary>
+              <div class="faq-answer">
+                Na <strong style="color:var(--text);">Rua Campos Novos, <span class="num">235</span> — Bairro São Luís, Criciúma - SC (CEP <span class="num">88803-320</span>)</strong>. O atendimento é feito com hora marcada.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Vocês adaptam a referência para o meu corpo?</span>
+                <span class="faq-plus">+</span>
+              </summary>
+              <div class="faq-answer">
+                Sim. Com a referência e a foto do local do corpo, o desenho é ajustado no tamanho e no formato ideais para encaixar bem na pele.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Como agendar uma sessão?</span>
+                <span class="faq-plus">+</span>
+              </summary>
+              <div class="faq-answer">
+                Depois de alinhar a ideia e o orçamento pelo WhatsApp, escolhemos o melhor dia e horário para a sua sessão.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Como cuidar da tatuagem antes e depois da sessão?</span>
+                <span class="faq-plus">+</span>
+              </summary>
+              <div class="faq-answer">
+                <strong style="color:var(--text);">Antes:</strong> durma bem, alimente-se, hidrate a pele e evite álcool e sol na região nos dias anteriores.
+                <strong style="color:var(--text);">Depois:</strong> lave com sabonete neutro, seque sem esfregar, aplique a pomada indicada, evite piscina, mar e sol por <span class="num">15</span> dias e não arranque as casquinhas.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       FOOTER
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">iti<span>.</span>ink</div>
+        <p style="margin-top:4px;">Estúdio de Tatuagem em Criciúma, Santa Catarina</p>
+      </div>
+      <div>
+        <p>Rua Campos Novos, <span class="num">235</span> — Bairro São Luís, Criciúma - SC • CEP <span class="num">88803-320</span></p>
+        <p style="margin-top:4px;">
+          Instagram: <a href="https://www.instagram.com/iti.ink/" target="_blank" rel="noopener noreferrer" style="color:var(--accent); font-weight:600;">@iti.ink</a>
+        </p>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#trabalhos">Trabalhos</a>
+          <a href="#orcamento">Orçamento</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#estudio">Estúdio</a>
+          <a href="https://maps.google.com/maps?cid=1194380198543212435" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <details class="privacy-details">
+        <summary>Privacidade e uso das suas fotos (LGPD)</summary>
+        <p>
+          As imagens de referência e do local do corpo são processadas apenas no seu navegador: nada é enviado para servidores do site. Quando você escolhe enviar pelo WhatsApp, as fotos seguem direto para o atendimento do estúdio. As fotografias enviadas pelo cliente via WhatsApp são utilizadas exclusivamente para análise técnica, dimensionamento do decalque e orçamento, sendo descartadas caso o atendimento não seja concluído e nunca divulgadas sem autorização expressa do titular.
+        </p>
+      </details>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       BARRA FIXA MOBILE + BOTÃO FLUTUANTE DESKTOP
+       ======================================================================= -->
+  <div class="mobile-sticky-bar">
+    <a
+      href="https://wa.me/5548988595450?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Est%C3%BAdio%20iti.ink%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20tatuagem."
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="trackWhatsAppClick('sticky_mobile')"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+      </svg>
+      <span>WhatsApp • <span class="num">(48) 98859-5450</span></span>
+    </a>
+  </div>
+
+  <a
+    href="https://wa.me/5548988595450?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Est%C3%BAdio%20iti.ink%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20tatuagem."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="desktop-float-wa"
+    aria-label="Orçar pelo WhatsApp (48) 98859-5450"
+    onclick="trackWhatsAppClick('float_desktop')"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    <span>WhatsApp <span class="num">(48) 98859-5450</span></span>
+  </a>
+
+  <!-- =======================================================================
+       LIGHTBOX FULLSCREEN MODAL
+       ======================================================================= -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lb-title"
+    onclick="if(event.target === this) closeLightbox()"
+  >
+    <div class="lightbox-panel">
+      <div class="lightbox-stage" id="lb-stage">
+        <button type="button" class="lb-nav-btn lb-prev" onclick="stepLightbox(-1)" aria-label="Trabalho anterior">‹</button>
+        <img id="lb-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" />
+        <button type="button" class="lb-nav-btn lb-next" onclick="stepLightbox(1)" aria-label="Próximo trabalho">›</button>
+      </div>
+      <div class="lightbox-side">
+        <div>
+          <div class="lightbox-top">
+            <span class="tattoo-index num" style="position:static;" id="lb-num">01 / 10</span>
+            <button type="button" class="lb-close" onclick="closeLightbox()" aria-label="Fechar visualização">✕</button>
+          </div>
+          <h3 id="lb-title" style="margin-top:16px; font-size:1.3rem;">Trabalho Realizado</h3>
+          <p class="lb-caption" id="lb-caption"></p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <a
+            id="lb-wa-cta"
+            href="https://wa.me/5548988595450"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-submit-wa"
+            style="margin-top:0; min-height:50px; font-size:0.9rem; text-align:center;"
+            onclick="trackWhatsAppClick('lightbox')"
+          >
+            Quero algo nesse nível — Orçar no WhatsApp
+          </a>
+          <button
+            type="button"
+            class="btn-copy-text"
+            style="margin-top:0;"
+            onclick="closeLightbox(); document.getElementById('orcamento').scrollIntoView({ behavior: 'smooth' });"
+          >
+            Anexar minha referência no orçamento
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast discreto -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- =======================================================================
+       VANILLA JAVASCRIPT (LIGHTBOX + RÉGUA 0-50 CM + DUAS FOTOS + WHATSAPP)
+       ======================================================================= -->
+  <script>
+    const WA_PHONE = '5548988595450';
+
+    const GALLERY_WORKS = [
+      {
+        src: '20230311_192858.webp',
+        alt: 'Fechamento de antebraço e mão em realismo preto e cinza com leão coroado, relógio e rosa no Estúdio iti.ink em Criciúma SC'
+      },
+      {
+        src: '20230411_201256.webp',
+        alt: 'Tatuagem colorida do escudo e estrelas do Criciúma E.C. na perna realizada no Estúdio iti.ink em Criciúma SC'
+      },
+      {
+        src: '20230425_154523.webp',
+        alt: 'Tatuagem blackwork de adaga com rosto e corda no antebraço no Estúdio iti.ink Criciúma'
+      },
+      {
+        src: 'IMG_20260316_121742.webp',
+        alt: 'Tatuagem tribal moderna em blackwork na lombar realizada no Estúdio iti.ink em Criciúma SC'
+      },
+      {
+        src: 'IMG_20260414_205827662.webp',
+        alt: 'Tatuagem fine line no antebraço com escrita Aurora, data e borboletas no Estúdio iti.ink Criciúma'
+      },
+      {
+        src: 'IMG_20260508_180837116.webp',
+        alt: 'Tatuagem realismo preto e cinza de retrato infantil no antebraço no Estúdio iti.ink Criciúma SC'
+      },
+      {
+        src: 'IMG_20260605_234303379.webp',
+        alt: 'Tatuagem anime blackwork de Tanjiro Kamado no antebraço realizada no Estúdio iti.ink Criciúma'
+      },
+      {
+        src: 'IMG_20260704_223608363_HDR.webp',
+        alt: 'Fechamento de braço em realismo preto e cinza com figura mitológica e anjo no Estúdio iti.ink Criciúma'
+      },
+      {
+        src: 'IMG_20260904_170700334.webp',
+        alt: 'Tatuagem anatômica colorida realista de ossos e músculos no antebraço no Estúdio iti.ink Criciúma SC'
+      },
+      {
+        src: 'IMG_20261016_210707414.webp',
+        alt: 'Tatuagem sombreada de centopeia com flores vermelhas no ombro e braço no Estúdio iti.ink Criciúma'
+      }
+    ];
+
+    let currentLightboxIdx = 0;
+    let touchStartX = 0;
+
+    let quoteState = {
+      bodyPart: 'Antebraço',
+      sizeCm: 15,
+      ref: { dataUrl: null, name: '' },
+      body: { dataUrl: null, name: '' }
+    };
+
+    function trackWhatsAppClick(location) {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'click_whatsapp', { link_location: location });
+        return;
+      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'click_whatsapp', link_location: location });
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      if (!el) return;
+      el.textContent = msg;
+      el.classList.add('show');
+      clearTimeout(el._timer);
+      el._timer = setTimeout(() => el.classList.remove('show'), 4500);
+    }
+
+    /* =======================================================================
+       LIGHTBOX FULLSCREEN
+       ======================================================================= */
+    function openLightbox(index) {
+      currentLightboxIdx = index;
+      renderLightbox();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function stepLightbox(delta) {
+      currentLightboxIdx = (currentLightboxIdx + delta + GALLERY_WORKS.length) % GALLERY_WORKS.length;
+      renderLightbox();
+    }
+
+    function renderLightbox() {
+      const item = GALLERY_WORKS[currentLightboxIdx];
+      const numStr = String(currentLightboxIdx + 1).padStart(2, '0');
+      document.getElementById('lb-img').src = item.src;
+      document.getElementById('lb-img').alt = item.alt;
+      document.getElementById('lb-num').textContent = `${numStr} / 10`;
+      document.getElementById('lb-caption').textContent = item.alt;
+
+      const waMsg = encodeURIComponent(
+        `Olá! Vi o trabalho #${numStr} no site do Estúdio iti.ink e gostaria de pedir um orçamento.`
+      );
+      document.getElementById('lb-wa-cta').href = `https://wa.me/${WA_PHONE}?text=${waMsg}`;
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') stepLightbox(1);
+      if (e.key === 'ArrowLeft') stepLightbox(-1);
+    });
+
+    document.querySelectorAll('.tattoo-card').forEach((card, idx) => {
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(idx);
+        }
+      });
+    });
+
+    const lbStage = document.getElementById('lb-stage');
+    lbStage.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lbStage.addEventListener('touchend', (e) => {
+      const diff = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(diff) > 45) {
+        stepLightbox(diff < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+
+    /* =======================================================================
+       RÉGUA INTERATIVA (0 A 50 CM)
+       ======================================================================= */
+    function initRuler() {
+      const ticksContainer = document.getElementById('ruler-ticks');
+      if (!ticksContainer) return;
+      let html = '';
+      for (let i = 0; i <= 50; i++) {
+        const isMajor = i % 10 === 0;
+        const isMed = !isMajor && i % 5 === 0;
+        const cls = isMajor ? 'ruler-tick major' : isMed ? 'ruler-tick med' : 'ruler-tick';
+        const pos = `calc(13px + (100% - 26px) * (${i} / 50))`;
+        html += `<span class="${cls}" style="left:${pos};"></span>`;
+        if (isMajor) {
+          html += `<span class="ruler-tick-label num" style="left:${pos};">${i}</span>`;
+        }
+      }
+      ticksContainer.innerHTML = html;
+      onRulerChange(quoteState.sizeCm);
+    }
+
+    function onRulerChange(val) {
+      const cm = Math.max(0, Math.min(50, parseInt(val, 10) || 0));
+      quoteState.sizeCm = cm;
+      document.getElementById('ruler-cm-value').textContent = cm;
+      const fillEl = document.getElementById('ruler-active-fill');
+      if (fillEl) {
+        fillEl.style.width = `calc((100% - 26px) * (${cm} / 50))`;
+      }
+      updatePreview();
+    }
+
+    /* =======================================================================
+       ORÇAMENTO (LOCAL + RÉGUA + 2 FOTOS)
+       ======================================================================= */
+    function setBodyPart(btn) {
+      document.querySelectorAll('#body-part-options .option-pill').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      quoteState.bodyPart = btn.getAttribute('data-val');
+      updatePreview();
+    }
+
+    function handleSlotFile(slot, file) {
+      if (!file || !file.type.startsWith('image/')) {
+        showToast('Selecione um arquivo de imagem válido (PNG, JPG ou WEBP).');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        quoteState[slot] = { dataUrl: ev.target.result, name: file.name };
+        document.getElementById(`thumb-${slot}`).src = ev.target.result;
+        document.getElementById(`name-${slot}`).textContent = file.name;
+        document.getElementById(`empty-${slot}`).style.display = 'none';
+        document.getElementById(`filled-${slot}`).classList.add('visible');
+        document.getElementById(`dropzone-${slot}`).classList.add('has-file');
+        refreshClipboardBanner();
+        updatePreview();
+        showToast(slot === 'ref' ? 'Imagem de referência anexada!' : 'Foto do local do corpo anexada!');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function onSlotFileSelect(e, slot) {
+      if (e.target.files && e.target.files[0]) {
+        handleSlotFile(slot, e.target.files[0]);
+      }
+    }
+
+    function onSlotDragOver(e, slot) {
+      e.preventDefault();
+      document.getElementById(`dropzone-${slot}`).classList.add('dragover');
+    }
+
+    function onSlotDragLeave(e, slot) {
+      e.preventDefault();
+      document.getElementById(`dropzone-${slot}`).classList.remove('dragover');
+    }
+
+    function onSlotDrop(e, slot) {
+      e.preventDefault();
+      document.getElementById(`dropzone-${slot}`).classList.remove('dragover');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+        handleSlotFile(slot, e.dataTransfer.files[0]);
+      }
+    }
+
+    function clearSlotImage(slot) {
+      quoteState[slot] = { dataUrl: null, name: '' };
+      document.getElementById(`input-${slot}`).value = '';
+      document.getElementById(`filled-${slot}`).classList.remove('visible');
+      document.getElementById(`empty-${slot}`).style.display = 'flex';
+      document.getElementById(`dropzone-${slot}`).classList.remove('has-file');
+      refreshClipboardBanner();
+      updatePreview();
+    }
+
+    function refreshClipboardBanner() {
+      const banner = document.getElementById('clipboard-banner');
+      const actions = document.getElementById('clip-quick-actions');
+      const hasRef = Boolean(quoteState.ref.dataUrl);
+      const hasBody = Boolean(quoteState.body.dataUrl);
+
+      if (!hasRef && !hasBody) {
+        banner.classList.remove('visible');
+        actions.innerHTML = '';
+        return;
+      }
+
+      banner.classList.add('visible');
+      let btns = '';
+      if (hasRef) {
+        btns += `<button type="button" class="btn-clip-mini" onclick="copyImageSlotToClipboard('ref', true)">Copiar foto de referência</button>`;
+      }
+      if (hasBody) {
+        btns += `<button type="button" class="btn-clip-mini" onclick="copyImageSlotToClipboard('body', true)">Copiar foto do corpo</button>`;
+      }
+      actions.innerHTML = btns;
+    }
+
+    function buildWhatsAppMessage() {
+      const note = document.getElementById('idea-note').value.trim();
+      const sizeText = quoteState.sizeCm > 0 ? `${quoteState.sizeCm} cm` : 'A definir';
+
+      let msg = `Olá! Vi o site do *Estúdio iti.ink* e gostaria de pedir um orçamento de tatuagem:\n\n`;
+      msg += `• *Local do corpo:* ${quoteState.bodyPart}\n`;
+      msg += `• *Tamanho aproximado:* ${sizeText}`;
+      if (note) {
+        msg += `\n• *Observação:* ${note}`;
+      }
+
+      msg += `\n\n📎 *Fotos para avaliação:*`;
+      msg += `\n• *Imagem de referência:* ${quoteState.ref.dataUrl ? 'Vou enviar logo abaixo' : 'Vou anexar na conversa'}`;
+      msg += `\n• *Foto do local do corpo:* ${quoteState.body.dataUrl ? 'Vou enviar logo abaixo' : 'Vou anexar na conversa'}`;
+
+      return msg;
+    }
+
+    function updatePreview() {
+      document.getElementById('wa-preview-box').textContent = buildWhatsAppMessage();
+    }
+
+    function convertDataUrlToPngBlob(dataUrl) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          canvas.width = img.width;
+          canvas.height = img.height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0);
+          canvas.toBlob((blob) => {
+            if (blob) resolve(blob);
+            else reject(new Error('Falha ao converter PNG'));
+          }, 'image/png');
+        };
+        img.onerror = reject;
+        img.src = dataUrl;
+      });
+    }
+
+    async function copyImageSlotToClipboard(slot, notify) {
+      const dataUrl = quoteState[slot] && quoteState[slot].dataUrl;
+      if (!dataUrl || !navigator.clipboard || !window.ClipboardItem) return false;
+      try {
+        const pngBlob = await convertDataUrlToPngBlob(dataUrl);
+        await navigator.clipboard.write([new ClipboardItem({ 'image/png': pngBlob })]);
+        if (notify) {
+          showToast(
+            slot === 'ref'
+              ? 'Foto de referência copiada! Cole (Ctrl+V) na conversa do WhatsApp.'
+              : 'Foto do local do corpo copiada! Cole (Ctrl+V) na conversa do WhatsApp.'
+          );
+        }
+        return true;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    async function sendQuoteWhatsApp() {
+      const hasRef = Boolean(quoteState.ref.dataUrl);
+      const hasBody = Boolean(quoteState.body.dataUrl);
+
+      if (!hasRef || !hasBody) {
+        showToast('Lembrete: para o orçamento, lembre-se de anexar a foto de referência e a foto do local do corpo.');
+      }
+
+      const msg = buildWhatsAppMessage();
+      const waUrl = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(msg)}`;
+
+      // Evento oficial de lead (GA4)
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'generate_lead', currency: 'BRL', value: 1, body_part: quoteState.bodyPart, size_cm: quoteState.sizeCm });
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', { currency: 'BRL', value: 1, body_part: quoteState.bodyPart, size_cm: quoteState.sizeCm });
+      }
+
+      // Safari/iOS: abre o WhatsApp de forma síncrona, antes de qualquer await
+      const popup = window.open(waUrl, '_blank', 'noopener,noreferrer');
+      if (!popup) window.location.href = waUrl;
+
+      if (hasRef) {
+        const copied = await copyImageSlotToClipboard('ref', false);
+        if (copied) {
+          showToast('Referência copiada! Cole na conversa do WhatsApp e envie também a foto do local do corpo.');
+        }
+      } else if (hasBody) {
+        const copied = await copyImageSlotToClipboard('body', false);
+        if (copied) {
+          showToast('Foto do corpo copiada! Cole na conversa do WhatsApp e envie também a referência.');
+        }
+      }
+    }
+
+    function copyTextFallback() {
+      const text = buildWhatsAppMessage();
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('Texto do orçamento copiado!');
+      } catch (err) {
+        showToast('Não foi possível copiar o texto.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    // Inicialização
+    initRuler();
+    updatePreview();
+
+    // Fundo animado: estrelas cintilantes (carregamento diferido para não impactar FCP/LCP)
+    function initStarfield() {
+      const canvas = document.getElementById('starfield-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize, { passive: true });
+
+      const stars = [];
+      const colors = ['#F4F4F5', '#00E8CE'];
+      const maxStars = 3;
+
+      function spawnStar() {
+        if (stars.length >= maxStars) return;
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: 1 + Math.random() * 1.5,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          life: 1, // start at 1 so progress > 0 and alpha > 0
+          maxLife: 1500 + Math.random() * 2000
+        });
+      }
+
+      function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (const s of stars) {
+          const progress = s.life / s.maxLife;
+          if (progress >= 1) continue;
+          // Alpha: fade in quickly, stay visible, then fade out
+          const alpha = progress < 0.1 ? progress * 10 * 0.85 : Math.sin(Math.min(progress, 0.9) * Math.PI / 0.9) * 0.85;
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+          ctx.fillStyle = s.color;
+          ctx.globalAlpha = alpha;
+          ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+      }
+
+      function animate(now) {
+        for (let i = stars.length - 1; i >= 0; i--) {
+          const s = stars[i];
+          s.life += 16;
+          if (s.life >= s.maxLife) {
+            stars.splice(i, 1);
+          }
+        }
+        // Nova estrela a cada ~2s
+        if (Math.random() < 0.008) spawnStar();
+        drawStars();
+        requestAnimationFrame(animate);
+      }
+
+      // Desenha estrelas iniciais imediatamente (para screenshot/teste visual)
+      for (let i = 0; i < 2; i++) spawnStar();
+      drawStars();
+      requestAnimationFrame(animate);
+    }
+
+    // Inicia após 1200ms do window.load (não bloqueia FCP/LCP)
+    if (document.readyState === 'complete') {
+      setTimeout(initStarfield, 1200);
+    } else {
+      window.addEventListener('load', function () { setTimeout(initStarfield, 1200); }, { once: true });
+    }
+  </script>
+</body>
+</html>
