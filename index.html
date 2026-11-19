@@ -3694,35 +3694,35 @@
         }
       }
 
-      // ========== ESTRELAS CADENTES ==========
+      // ========== ESTRELAS CADENTES (OTIMIZADAS) ==========
       const shootingStars = [];
 
       function spawnShootingStar() {
         // Vem de fora da tela (topo ou laterais) em direção ao centro
         const side = Math.floor(Math.random() * 4); // 0=top, 1=right, 2=bottom, 3=left
         let x, y, vx, vy;
-        const speed = 8 + Math.random() * 6; // velocidade base
+        const speed = 6 + Math.random() * 4; // velocidade reduzida
 
         if (side === 0) { // topo
           x = Math.random() * canvas.width;
-          y = -20;
-          vx = (Math.random() - 0.5) * 2;
+          y = -10;
+          vx = (Math.random() - 0.5) * 1.5;
           vy = speed;
         } else if (side === 1) { // direita
-          x = canvas.width + 20;
-          y = Math.random() * canvas.height * 0.7;
+          x = canvas.width + 10;
+          y = Math.random() * canvas.height * 0.6;
           vx = -speed;
-          vy = (Math.random() - 0.5) * 2;
+          vy = (Math.random() - 0.5) * 1.5;
         } else if (side === 2) { // baixo
           x = Math.random() * canvas.width;
-          y = canvas.height + 20;
-          vx = (Math.random() - 0.5) * 2;
+          y = canvas.height + 10;
+          vx = (Math.random() - 0.5) * 1.5;
           vy = -speed;
         } else { // esquerda
-          x = -20;
-          y = Math.random() * canvas.height * 0.7;
+          x = -10;
+          y = Math.random() * canvas.height * 0.6;
           vx = speed;
-          vy = (Math.random() - 0.5) * 2;
+          vy = (Math.random() - 0.5) * 1.5;
         }
 
         // Cor da estrela cadente (branco quente a turquesa)
@@ -3734,63 +3734,53 @@
         shootingStars.push({
           x, y,
           vx, vy,
-          length: 40 + Math.random() * 80, // comprimento da cauda
-          width: 1.5 + Math.random() * 1.5,
+          length: 30 + Math.random() * 50, // comprimento menor
+          width: 1 + Math.random() * 1,
           color,
           glowColor,
           life: 0,
-          maxLife: 800 + Math.random() * 600, // duração em ms
-          particles: [] // partículas da cauda
+          maxLife: 600 + Math.random() * 400, // duração menor
+          particles: []
         });
 
-        // Agenda próxima estrela cadente (3-5 segundos)
-        const nextDelay = 3000 + Math.random() * 2000;
+        // Agenda próxima estrela cadente (4-7 segundos) - menos frequente
+        const nextDelay = 4000 + Math.random() * 3000;
         setTimeout(spawnShootingStar, nextDelay);
       }
 
-      function drawShootingStar(s, now) {
+      function drawShootingStar(s) {
         const progress = s.life / s.maxLife;
         if (progress >= 1) return;
 
-        // Alpha baseado no progresso (aparece, brilha, desaparece)
+        // Alpha simples baseado no progresso
         const alpha = progress < 0.1 
           ? progress * 10 
-          : progress > 0.8 
-            ? (1 - progress) * 5 
+          : progress > 0.85 
+            ? (1 - progress) * 6.6 
             : 1;
 
-        // Desenha partículas da cauda (rastros)
-        s.particles.forEach(p => {
-          const pAlpha = p.life / p.maxLife * alpha * 0.6;
-          if (pAlpha > 0.02) {
+        // Desenha apenas 2-3 partículas da cauda (em vez de muitas)
+        const tailParticles = s.particles.slice(-3);
+        for (const p of tailParticles) {
+          const pAlpha = (p.life / p.maxLife) * alpha * 0.4;
+          if (pAlpha > 0.05) {
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
             ctx.fillStyle = p.color;
             ctx.globalAlpha = pAlpha;
             ctx.fill();
           }
-        });
+        }
 
-        // Corpo principal da estrela cadente
+        // Cauda simples com gradient (sem glow complexo na cabeça)
         const headX = s.x;
         const headY = s.y;
-        const tailX = s.x - s.vx * 0.1 * s.length;
-        const tailY = s.y - s.vy * 0.1 * s.length;
+        const tailX = s.x - s.vx * s.length * 0.08;
+        const tailY = s.y - s.vy * s.length * 0.08;
 
-        // Glow da cabeça
-        const headGlow = ctx.createRadialGradient(headX, headY, 0, headX, headY, s.width * 4);
-        headGlow.addColorStop(0, s.glowColor);
-        headGlow.addColorStop(1, 'transparent');
-        ctx.beginPath();
-        ctx.arc(headX, headY, s.width * 3, 0, Math.PI * 2);
-        ctx.fillStyle = headGlow;
-        ctx.globalAlpha = alpha * 0.5;
-        ctx.fill();
-
-        // Cauda com gradient
         const tailGradient = ctx.createLinearGradient(headX, headY, tailX, tailY);
         tailGradient.addColorStop(0, s.color);
-        tailGradient.addColorStop(0.3, s.glowColor);
+        tailGradient.addColorStop(0.4, s.glowColor);
         tailGradient.addColorStop(1, 'transparent');
 
         ctx.beginPath();
@@ -3802,35 +3792,29 @@
         ctx.globalAlpha = alpha;
         ctx.stroke();
 
-        // Partículas brilhantes ao redor da cabeça
-        for (let i = 0; i < 3; i++) {
-          const px = headX + (Math.random() - 0.5) * s.width * 4;
-          const py = headY + (Math.random() - 0.5) * s.width * 4;
-          const ps = 0.5 + Math.random() * 1.5;
-          ctx.beginPath();
-          ctx.arc(px, py, ps, 0, Math.PI * 2);
-          ctx.fillStyle = s.color;
-          ctx.globalAlpha = alpha * (0.5 + Math.random() * 0.5);
-          ctx.fill();
-        }
-
+        // Apenas 1 partícula brilhante na cabeça
+        ctx.beginPath();
+        ctx.arc(headX, headY, s.width * 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = s.color;
+        ctx.globalAlpha = alpha * 0.8;
+        ctx.fill();
         ctx.globalAlpha = 1;
       }
 
-      function updateShootingStars(now) {
+      function updateShootingStars() {
         for (let i = shootingStars.length - 1; i >= 0; i--) {
           const s = shootingStars[i];
           s.life += 16;
 
-          // Adiciona partícula à cauda
-          if (s.life % 32 === 0) { // a cada ~2 frames
+          // Adiciona partícula à cauda (máx 10 partículas)
+          if (s.particles.length < 10 && s.life % 48 === 0) {
             s.particles.push({
               x: s.x,
               y: s.y,
-              size: s.width * (0.3 + Math.random() * 0.4),
+              size: s.width * (0.3 + Math.random() * 0.3),
               color: s.color,
               life: 0,
-              maxLife: 200 + Math.random() * 300
+              maxLife: 150 + Math.random() * 200
             });
           }
 
@@ -3838,8 +3822,8 @@
           for (let j = s.particles.length - 1; j >= 0; j--) {
             const p = s.particles[j];
             p.life += 16;
-            p.x -= s.vx * 0.05;
-            p.y -= s.vy * 0.05;
+            p.x -= s.vx * 0.03;
+            p.y -= s.vy * 0.03;
             if (p.life >= p.maxLife) s.particles.splice(j, 1);
           }
 
@@ -3848,7 +3832,7 @@
           s.y += s.vy;
 
           // Remove se saiu da tela ou vida acabou
-          const margin = 100;
+          const margin = 50;
           if (s.life >= s.maxLife || 
               s.x < -margin || s.x > canvas.width + margin ||
               s.y < -margin || s.y > canvas.height + margin) {
