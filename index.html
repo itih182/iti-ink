@@ -3484,7 +3484,7 @@
           y: Math.random() * canvas.height,
           r: 1 + Math.random() * 1.5,
           color: colors[Math.floor(Math.random() * colors.length)],
-          life: 0,
+          life: 1, // start at 1 so progress > 0 and alpha > 0
           maxLife: 1500 + Math.random() * 2000
         });
       }
@@ -3494,7 +3494,8 @@
         for (const s of stars) {
           const progress = s.life / s.maxLife;
           if (progress >= 1) continue;
-          const alpha = Math.sin(progress * Math.PI) * 0.85;
+          // Alpha: fade in quickly, stay visible, then fade out
+          const alpha = progress < 0.1 ? progress * 10 * 0.85 : Math.sin(Math.min(progress, 0.9) * Math.PI / 0.9) * 0.85;
           ctx.beginPath();
           ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
           ctx.fillStyle = s.color;
