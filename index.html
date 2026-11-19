@@ -2042,14 +2042,17 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="iti.ink Tattoo Studio Início">
-        <img
-          src="logo.png"
-          alt="Logo oficial iti.ink Tattoo Since 2017"
-          width="50"
-          height="50"
-          class="brand-logo-img"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"
-        />
+        <picture>
+          <source srcset="logo.webp" type="image/webp" />
+          <img
+            src="logo.png"
+            alt="Logo oficial iti.ink Tattoo Since 2017"
+            width="50"
+            height="50"
+            class="brand-logo-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"
+          />
+        </picture>
         <span class="brand-fallback">
           <span class="brand-fallback-dot" aria-hidden="true"></span>
           iti.ink
@@ -2085,15 +2088,18 @@
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-logo-wrap">
-          <img
-            src="logo.webp"
-            alt="Emblema oficial iti.ink Tattoo Since 2017 — Estúdio de Tatuagem em Criciúma SC"
-            width="184"
-            height="184"
-            class="hero-logo-img"
-            fetchpriority="high"
-            onerror="this.parentElement.style.display='none';"
-          />
+          <picture>
+            <source srcset="logo.webp" type="image/webp" />
+            <img
+              src="logo.png"
+              alt="Emblema oficial iti.ink Tattoo Since 2017 — Estúdio de Tatuagem em Criciúma SC"
+              width="184"
+              height="184"
+              class="hero-logo-img"
+              fetchpriority="high"
+              onerror="this.parentElement.style.display='none';"
+            />
+          </picture>
         </div>
 
         <div class="location-pill">CRICIÚMA • SC</div>
