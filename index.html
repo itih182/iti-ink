@@ -2711,15 +2711,18 @@
 
         <div class="artist-card">
           <div class="artist-photo-wrap">
-            <img
-              src="tatuador.jpg"
-              alt="Itiberê Riffel, tatuador responsável pelo Estúdio iti.ink em Criciúma SC"
-              class="artist-photo"
-              width="104"
-              height="104"
-              loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-            />
+            <picture>
+              <source srcset="tatuador.webp" type="image/webp" />
+              <img
+                src="tatuador.jpg"
+                alt="Itiberê Riffel, tatuador responsável pelo Estúdio iti.ink em Criciúma SC"
+                class="artist-photo"
+                width="104"
+                height="104"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+            </picture>
             <span class="artist-monogram" style="display:none;" aria-hidden="true">
               IR<span style="display:block; font-family:'Inter',sans-serif; font-size:0.55rem; letter-spacing:0.14em; color:var(--muted); margin-top:2px;">DESDE 2017</span>
             </span>
