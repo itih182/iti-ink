@@ -3584,7 +3584,7 @@
     initRuler();
     updatePreview();
 
-    // Fundo animado: estrelas realistas (carregamento diferido para não impactar FCP/LCP)
+    // Fundo animado: estrelas realistas + estrelas cadentes (carregamento diferido para não impactar FCP/LCP)
     function initStarfield() {
       const canvas = document.getElementById('starfield-canvas');
       if (!canvas) return;
@@ -3694,6 +3694,169 @@
         }
       }
 
+      // ========== ESTRELAS CADENTES ==========
+      const shootingStars = [];
+
+      function spawnShootingStar() {
+        // Vem de fora da tela (topo ou laterais) em direção ao centro
+        const side = Math.floor(Math.random() * 4); // 0=top, 1=right, 2=bottom, 3=left
+        let x, y, vx, vy;
+        const speed = 8 + Math.random() * 6; // velocidade base
+
+        if (side === 0) { // topo
+          x = Math.random() * canvas.width;
+          y = -20;
+          vx = (Math.random() - 0.5) * 2;
+          vy = speed;
+        } else if (side === 1) { // direita
+          x = canvas.width + 20;
+          y = Math.random() * canvas.height * 0.7;
+          vx = -speed;
+          vy = (Math.random() - 0.5) * 2;
+        } else if (side === 2) { // baixo
+          x = Math.random() * canvas.width;
+          y = canvas.height + 20;
+          vx = (Math.random() - 0.5) * 2;
+          vy = -speed;
+        } else { // esquerda
+          x = -20;
+          y = Math.random() * canvas.height * 0.7;
+          vx = speed;
+          vy = (Math.random() - 0.5) * 2;
+        }
+
+        // Cor da estrela cadente (branco quente a turquesa)
+        const colors = ['#FFF8E7', '#FFFAF0', '#F0F8FF', '#E0FFF8', '#D0FFF0'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const glowColors = ['#FFE8A0', '#FFF0D0', '#D0E8FF', '#A0FFE8', '#80FFE0'];
+        const glowColor = glowColors[colors.indexOf(color)];
+
+        shootingStars.push({
+          x, y,
+          vx, vy,
+          length: 40 + Math.random() * 80, // comprimento da cauda
+          width: 1.5 + Math.random() * 1.5,
+          color,
+          glowColor,
+          life: 0,
+          maxLife: 800 + Math.random() * 600, // duração em ms
+          particles: [] // partículas da cauda
+        });
+
+        // Agenda próxima estrela cadente (3-5 segundos)
+        const nextDelay = 3000 + Math.random() * 2000;
+        setTimeout(spawnShootingStar, nextDelay);
+      }
+
+      function drawShootingStar(s, now) {
+        const progress = s.life / s.maxLife;
+        if (progress >= 1) return;
+
+        // Alpha baseado no progresso (aparece, brilha, desaparece)
+        const alpha = progress < 0.1 
+          ? progress * 10 
+          : progress > 0.8 
+            ? (1 - progress) * 5 
+            : 1;
+
+        // Desenha partículas da cauda (rastros)
+        s.particles.forEach(p => {
+          const pAlpha = p.life / p.maxLife * alpha * 0.6;
+          if (pAlpha > 0.02) {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.globalAlpha = pAlpha;
+            ctx.fill();
+          }
+        });
+
+        // Corpo principal da estrela cadente
+        const headX = s.x;
+        const headY = s.y;
+        const tailX = s.x - s.vx * 0.1 * s.length;
+        const tailY = s.y - s.vy * 0.1 * s.length;
+
+        // Glow da cabeça
+        const headGlow = ctx.createRadialGradient(headX, headY, 0, headX, headY, s.width * 4);
+        headGlow.addColorStop(0, s.glowColor);
+        headGlow.addColorStop(1, 'transparent');
+        ctx.beginPath();
+        ctx.arc(headX, headY, s.width * 3, 0, Math.PI * 2);
+        ctx.fillStyle = headGlow;
+        ctx.globalAlpha = alpha * 0.5;
+        ctx.fill();
+
+        // Cauda com gradient
+        const tailGradient = ctx.createLinearGradient(headX, headY, tailX, tailY);
+        tailGradient.addColorStop(0, s.color);
+        tailGradient.addColorStop(0.3, s.glowColor);
+        tailGradient.addColorStop(1, 'transparent');
+
+        ctx.beginPath();
+        ctx.moveTo(headX, headY);
+        ctx.lineTo(tailX, tailY);
+        ctx.strokeStyle = tailGradient;
+        ctx.lineWidth = s.width * alpha;
+        ctx.lineCap = 'round';
+        ctx.globalAlpha = alpha;
+        ctx.stroke();
+
+        // Partículas brilhantes ao redor da cabeça
+        for (let i = 0; i < 3; i++) {
+          const px = headX + (Math.random() - 0.5) * s.width * 4;
+          const py = headY + (Math.random() - 0.5) * s.width * 4;
+          const ps = 0.5 + Math.random() * 1.5;
+          ctx.beginPath();
+          ctx.arc(px, py, ps, 0, Math.PI * 2);
+          ctx.fillStyle = s.color;
+          ctx.globalAlpha = alpha * (0.5 + Math.random() * 0.5);
+          ctx.fill();
+        }
+
+        ctx.globalAlpha = 1;
+      }
+
+      function updateShootingStars(now) {
+        for (let i = shootingStars.length - 1; i >= 0; i--) {
+          const s = shootingStars[i];
+          s.life += 16;
+
+          // Adiciona partícula à cauda
+          if (s.life % 32 === 0) { // a cada ~2 frames
+            s.particles.push({
+              x: s.x,
+              y: s.y,
+              size: s.width * (0.3 + Math.random() * 0.4),
+              color: s.color,
+              life: 0,
+              maxLife: 200 + Math.random() * 300
+            });
+          }
+
+          // Atualiza partículas
+          for (let j = s.particles.length - 1; j >= 0; j--) {
+            const p = s.particles[j];
+            p.life += 16;
+            p.x -= s.vx * 0.05;
+            p.y -= s.vy * 0.05;
+            if (p.life >= p.maxLife) s.particles.splice(j, 1);
+          }
+
+          // Move estrela
+          s.x += s.vx;
+          s.y += s.vy;
+
+          // Remove se saiu da tela ou vida acabou
+          const margin = 100;
+          if (s.life >= s.maxLife || 
+              s.x < -margin || s.x > canvas.width + margin ||
+              s.y < -margin || s.y > canvas.height + margin) {
+            shootingStars.splice(i, 1);
+          }
+        }
+      }
+
       function drawStars() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         const now = performance.now();
@@ -3709,12 +3872,21 @@
       }
 
       function animate(now) {
+        updateShootingStars(now);
         drawStars();
+        // Desenha estrelas cadentes por cima
+        for (const s of shootingStars) {
+          drawShootingStar(s, now);
+        }
         requestAnimationFrame(animate);
       }
 
       // Popula céu inicial
       for (let i = 0; i < maxStars; i++) spawnStar();
+      
+      // Inicia primeira estrela cadente após 2-4 segundos
+      setTimeout(spawnShootingStar, 2000 + Math.random() * 2000);
+      
       requestAnimationFrame(animate);
     }
 
