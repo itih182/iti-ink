@@ -85,7 +85,7 @@
         "@id": "https://iti.ink/#tattooparlor",
         "name": "iti.ink Tattoo Studio",
         "alternateName": "Studio iti.ink",
-        "description": "Studio iti.ink, mais de 8 anos de experiência com atendimento especializado em Criciúma, Santa Catarina.",
+        "description": "Studio iti.ink, mais de 8 anos de experiência com atendimento especializado em Criciúma, Santa Catarina, próximo à Prefeitura Municipal de Criciúma e ao Parque das Nações.",
         "image": [
           "https://itih182.github.io/iti-ink/20230311_192858.jpg",
           "https://itih182.github.io/iti-ink/IMG_20260704_223608363_HDR.jpg",
@@ -110,10 +110,10 @@
         },
         "areaServed": [
           { "@type": "City", "name": "Criciúma" },
-          { "@type": "City", "name": "Içara" },
-          { "@type": "City", "name": "Forquilhinha" },
-          { "@type": "City", "name": "Nova Veneza" },
-          { "@type": "City", "name": "Araranguá" }
+          { "@type": "Place", "name": "São Luís" },
+          { "@type": "Place", "name": "Santa Bárbara" },
+          { "@type": "Place", "name": "Próspera" },
+          { "@type": "City", "name": "Içara" }
         ],
         "sameAs": [
           "https://www.instagram.com/iti.ink/",
@@ -728,7 +728,14 @@
 
     .tattoo-card {
       position: relative;
+      display: block;
+      width: 100%;
       aspect-ratio: 3 / 4;
+      padding: 0;
+      appearance: none;
+      font: inherit;
+      color: inherit;
+      text-align: inherit;
       border-radius: var(--radius-md);
       overflow: hidden;
       background: var(--surface);
@@ -2384,7 +2391,7 @@
 
         <div class="gallery-grid" id="gallery-grid">
           <!-- 01 -->
-          <div class="tattoo-card" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="Ampliar trabalho 01">
+          <button type="button" class="tattoo-card" onclick="openLightbox(0)">
             <span class="tattoo-index num">01</span>
                         <picture>
               <source
@@ -2405,10 +2412,10 @@
               <code>20230311_192858.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 02 -->
-          <div class="tattoo-card" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="Ampliar trabalho 02">
+          <button type="button" class="tattoo-card" onclick="openLightbox(1)">
             <span class="tattoo-index num">02</span>
                         <picture>
               <source
@@ -2429,10 +2436,10 @@
               <code>20230411_201256.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 03 -->
-          <div class="tattoo-card" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="Ampliar trabalho 03">
+          <button type="button" class="tattoo-card" onclick="openLightbox(2)">
             <span class="tattoo-index num">03</span>
                         <picture>
               <source
@@ -2454,10 +2461,10 @@
               <code>20230425_154523.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 04 -->
-          <div class="tattoo-card" onclick="openLightbox(3)" role="button" tabindex="0" aria-label="Ampliar trabalho 04">
+          <button type="button" class="tattoo-card" onclick="openLightbox(3)">
             <span class="tattoo-index num">04</span>
                         <picture>
               <source
@@ -2479,10 +2486,10 @@
               <code>IMG_20260316_121742.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 05 -->
-          <div class="tattoo-card" onclick="openLightbox(4)" role="button" tabindex="0" aria-label="Ampliar trabalho 05">
+          <button type="button" class="tattoo-card" onclick="openLightbox(4)">
             <span class="tattoo-index num">05</span>
                         <picture>
               <source
@@ -2504,10 +2511,10 @@
               <code>IMG_20260414_205827662.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 06 -->
-          <div class="tattoo-card" onclick="openLightbox(5)" role="button" tabindex="0" aria-label="Ampliar trabalho 06">
+          <button type="button" class="tattoo-card" onclick="openLightbox(5)">
             <span class="tattoo-index num">06</span>
                         <picture>
               <source
@@ -2529,10 +2536,10 @@
               <code>IMG_20260508_180837116.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 07 -->
-          <div class="tattoo-card" onclick="openLightbox(6)" role="button" tabindex="0" aria-label="Ampliar trabalho 07">
+          <button type="button" class="tattoo-card" onclick="openLightbox(6)">
             <span class="tattoo-index num">07</span>
                         <picture>
               <source
@@ -2554,10 +2561,10 @@
               <code>IMG_20260605_234303379.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 08 -->
-          <div class="tattoo-card" onclick="openLightbox(7)" role="button" tabindex="0" aria-label="Ampliar trabalho 08">
+          <button type="button" class="tattoo-card" onclick="openLightbox(7)">
             <span class="tattoo-index num">08</span>
                         <picture>
               <source
@@ -2579,10 +2586,10 @@
               <code>IMG_20260704_223608363_HDR.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 09 -->
-          <div class="tattoo-card" onclick="openLightbox(8)" role="button" tabindex="0" aria-label="Ampliar trabalho 09">
+          <button type="button" class="tattoo-card" onclick="openLightbox(8)">
             <span class="tattoo-index num">09</span>
                         <picture>
               <source
@@ -2604,10 +2611,10 @@
               <code>IMG_20260904_170700334.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
 
           <!-- 10 -->
-          <div class="tattoo-card" onclick="openLightbox(9)" role="button" tabindex="0" aria-label="Ampliar trabalho 10">
+          <button type="button" class="tattoo-card" onclick="openLightbox(9)">
             <span class="tattoo-index num">10</span>
                         <picture>
               <source
@@ -2629,7 +2636,7 @@
               <code>IMG_20261016_210707414.jpg</code>
             </div>
             <span class="tattoo-zoom-hint">Ampliar</span>
-          </div>
+          </button>
         </div>
 
         <div class="gallery-cta-wrap">
@@ -2958,7 +2965,7 @@
             <h3 class="artist-name">O Tatuador — Itiberê Riffel</h3>
             <div class="artist-role">Desde 2017</div>
             <p class="artist-bio">
-              Mais de <span class="num">8</span> anos de experiência em realismo, blackwork e projetos autorais.
+              Itiberê Riffel é tatuador em Criciúma com mais de <span class="num">8</span> anos de experiência em realismo, blackwork e projetos autorais.
               Atendimento individual, do desenho à cicatrização.
             </p>
           </div>
@@ -2970,7 +2977,7 @@
             <div>
               <h3 style="font-size:1.5rem; margin-bottom:12px;">Estúdio iti.ink</h3>
               <p class="studio-bio">
-                O <strong>Estúdio iti.ink</strong> fica no bairro São Luís, em Criciúma, Santa Catarina. Atendimento individual com hora marcada, mais de <strong class="num">8</strong> anos de experiência e material <strong class="num">100%</strong> descartável.
+                Localizado no bairro São Luís, próximo à Prefeitura Municipal de Criciúma.
               </p>
 
               <div class="info-list">
@@ -3326,15 +3333,6 @@
       if (e.key === 'Escape') closeLightbox();
       if (e.key === 'ArrowRight') stepLightbox(1);
       if (e.key === 'ArrowLeft') stepLightbox(-1);
-    });
-
-    document.querySelectorAll('.tattoo-card').forEach((card, idx) => {
-      card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openLightbox(idx);
-        }
-      });
     });
 
     const lbStage = document.getElementById('lb-stage');
